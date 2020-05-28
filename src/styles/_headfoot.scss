@@ -1,0 +1,57 @@
+#header{
+  z-index: 2;
+  @include row(space-between);
+  position: sticky;
+    top: 0px;
+  padding: 10px 15px;
+  background: $goldenrod;
+  color: white;
+  box-shadow: 0px 0px 15px 0px black;
+}
+.header-icon{
+  @include dim(30px, 30px);
+  background-size: contain;
+}
+  #hamburger{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Icon_HamburgerMenu.png')}
+#mini-header{
+  @include dim(450px, 100vw);
+  @include column;
+  text-align: center;
+  h1{
+    font-family: 'Montserrat';
+    color: white;
+  }
+  justify-content: center;
+  padding: 0px 60px;
+  background: $cornflowerblue;
+}
+// GOOD
+.footer-icon{
+  @include dim(50px, 50px);
+  border-radius: 130px;
+  background-size: cover;
+}
+  #email{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Email.PNG')}
+  #phone{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Phone.PNG')}
+  #resume{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Resume.PNG')}
+  #github{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_GitHub.PNG')}
+  #twitter{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Twitter.PNG')}
+  #instagram{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Instagram.png')}
+  #linkedin{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_LinkedIn.PNG')}
+// GOOD
+#footer-main{
+  @include column;
+  background: $cornflowerblue;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  h1{margin-bottom: 15px;}
+}
+// ==== ==== NOT GOOD ==== ====
+.footer-icon-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  grid-gap: 20px;
+  width: 95vw;
+  justify-content: center;
+}

@@ -1,0 +1,51 @@
+$goldenrod: #f2a539;
+$cornflowerblue: #4bafec;
+$ghostwhite: #f9fafa;
+$darkslategray: #143846;
+$lightgray: #afafaf;
+$shadow: #979797;
+
+// 'Roboto'
+// 'Lato'
+// 'Montserrat'
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@mixin dim ($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin row ($justify-content) {
+  display: flex;
+  justify-content: $justify-content;
+}
+@mixin column () {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Lato';
+}
+header{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Montserrat';
+}
+h1, h2, h3, h4, h5{
+  margin: 0px;
+}
+h1 {font-family: 'Lato';}
+h2 {font-size: 20px; color: $cornflowerblue;}
+h4{font-family: 'Roboto';}
+span{color: $lightgray;}
+
+@import './card';
+@import './headfoot';
+@import './sections';
+@import './langtech';

@@ -1,0 +1,13 @@
+.white-section{
+  @include column;
+  text-align: center;
+  padding: 25px 15px;
+}
+  #gray{
+    background: $ghostwhite;
+  }
+  .line{
+    background: $goldenrod;
+    margin: 20px;
+    @include dim(5px, 120px);
+  }
