@@ -26,19 +26,6 @@
   background: $cornflowerblue;
 }
 // GOOD
-.footer-icon{
-  @include dim(50px, 50px);
-  border-radius: 130px;
-  background-size: cover;
-}
-  #email{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Email.PNG')}
-  #phone{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Phone.PNG')}
-  #resume{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Resume.PNG')}
-  #github{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_GitHub.PNG')}
-  #twitter{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Twitter.PNG')}
-  #instagram{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Instagram.png')}
-  #linkedin{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Connect_LinkedIn.PNG')}
-// GOOD
 #footer-main{
   @include column;
   background: $cornflowerblue;
