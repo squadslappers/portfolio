@@ -1,8 +1,11 @@
 $goldenrod: #f2a539;
+$goldenrod: #424242;
 $cornflowerblue: #4bafec;
+$cornflowerblue: #005183;
 $ghostwhite: #f9fafa;
-$darkslategray: #143846;
+// $darkslategray: #143846;
 $lightgray: #afafaf;
+// $lightgray: #de662d;
 $shadow: #979797;
 
 // 'Roboto'
@@ -31,6 +34,8 @@ p {
   margin-top: 10px;
   font-size: 18px;
   font-family: 'Lato';
+  font-weight: bold;
+  color: $goldenrod;
 }
 header{
   font-weight: bold;

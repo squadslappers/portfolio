@@ -11,33 +11,33 @@ const education = {
   cards: [
     {
       title: 'Web Development Bootcamp',
-      context: 'DevMountain',
-      description: 'I graduated from DevMountain feeling comfortable and confident in my abilities as a web developer. Before I attended I knew absolutely nothing about coding, so it was a major success.',
+      context: 'DevMountain • Complete',
+      description: 'DevMountain\'s 13-week, full-time web development bootcamp gave me an excellent foundation for my web development career. I now have the knowledge, experience, tools, and resources I need to be an efficient and productive full-stack developer.',
     },
     {
       title: 'The Complete JavaScript Course',
-      context: 'Udemy',
-      description: 'This course is helping me master the art of writing, reading, organizing, understanding, and debugging JavaScript code — ES6+, OOP, AJAX, Webpack and all.'
+      context: 'Udemy • Complete',
+      description: 'Jonas Schmedtmann\'s JavaScript course covers everything a successful web developer needs to know about JavaScript. I now have the tools, confidence, and experience needed to tackle any coding challenge that comes my way.'
     },
     {
       title: 'React — The Complete Guide',
-      context: 'Udemy',
-      description: 'This course covers everything there is to know about React — from basic features and syntax to redux, context, hooks, and more.'
+      context: 'Udemy • In Progress',
+      description: 'Maximilian Schwarzmüller\'s React course has greatly increased my understanding of React and enabled me to take advantage of the complex and powerful tools it has to offer.'
     },
     {
       title: 'React Native — The Practical Guide',
-      context: 'Udemy',
-      description: 'This course is all about learning to use React and JavaScript to create cross-platform mobile apps — from styling and functionality to authentication and connecting to backend servers.'
+      context: 'Udemy • In Progress',
+      description: 'Maximilian Schwarzmüller\'s React Native course is all about creating beautiful and powerful cross-platform mobile apps.'
     },
     {
       title: 'Angular — The Complete Guide',
-      context: 'Udemy',
-      description: 'This course covers how to use Angular 9 and TypeScript to build fast, efficient, and useful web applications.'
+      context: 'Udemy • In Progress',
+      description: 'Maximilian Schwarzmüller\'s Angular course covers how to use all of the bells and whistles of Angular 9 and TypeScript to build fast, efficient, and useful web applications.'
     },
     {
       title: 'Computer Science 101',
-      context: 'Udemy',
-      description: 'This course covers the fundamentals of computer science theory. Big O notation, sorting algorithms, and linked lists are only a few of the important topics this course teaches.'
+      context: 'Udemy • Complete',
+      description: 'Kurt Anderson\'s Computer Science course covers the fundamentals of computer science theory, giving me a greater understanding of what\'s happening behind the scenes when I\'m writing code.'
     }
   ]
 }
@@ -46,13 +46,13 @@ const examples = {
   cards: [
     {
       title: 'SuppleBudget',
-      context: 'Personal',
-      description: 'This is a dynamic budgeting application that I built. The unique approach I took to building this application allows your budget to be more flexible than ever.'
+      context: 'Personal • Almost Hosted',
+      description: 'This dynamic application makes budgeting fast, simple, and easy for people with inconsistent incomes.'
     },
     {
       title: 'Employment',
-      context: 'Personal',
-      description: 'Family Pointer is a tool to help parents encourage healthy habits in their young children with the help of a system based on Opportunities, Rewards, and the occasional Punishment.'
+      context: 'Personal • Almost Hosted',
+      description: 'This simple tool enables parents to encourage healthy habits in their young children by using a system of Opportunities and Rewards.'
     }
   ]
 }
