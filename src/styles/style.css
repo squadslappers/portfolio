@@ -6,10 +6,8 @@
 }
 
 p {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 18px;
-  font-family: 'Lato';
-  font-weight: bold;
   color: #424242;
 }
 
@@ -37,7 +35,7 @@ h4 {
 }
 
 span {
-  color: #afafaf;
+  color: #808080;
 }
 
 .cards {
@@ -60,12 +58,11 @@ span {
 
 .card {
   width: 100%;
+  background: #ecedee;
   text-align: left;
   margin-bottom: 15px;
-  padding: 25px;
-  -webkit-box-shadow: 0px 3px 7px 0px #d4d4d4;
-          box-shadow: 0px 3px 7px 0px #d4d4d4;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .card-header {
@@ -86,7 +83,7 @@ span {
   border-radius: 30px;
   border: 2px solid #de662d;
   background: #de662d;
-  margin-right: 10px;
+  margin-right: 20px;
   background-size: cover;
 }
 
@@ -99,6 +96,7 @@ span {
 }
 
 #header {
+  padding: 10px 15px;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +107,6 @@ span {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  padding: 10px 15px;
   background: #424242;
   color: white;
   -webkit-box-shadow: 0px 0px 15px 0px black;
@@ -166,11 +163,11 @@ span {
   background: #005183;
   color: white;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 #footer-main h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer-icon-container {
@@ -185,7 +182,7 @@ span {
           justify-content: center;
 }
 
-.white-section {
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,8 +197,12 @@ span {
   padding: 25px 15px;
 }
 
-#gray {
-  background: #f9fafa;
+#white {
+  background: white;
+}
+
+#lightgray {
+  background: #ecedee;
 }
 
 .line {

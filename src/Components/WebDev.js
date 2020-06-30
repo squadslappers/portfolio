@@ -7,7 +7,7 @@ import Header from './Header';
 const WebDevelopment = () => {
 
 const education = {
-  title: 'EDUCATION', 
+  title: 'EDUCATION',
   cards: [
     {
       title: 'Web Development Bootcamp',
@@ -56,6 +56,7 @@ const examples = {
     }
   ]
 }
+
 const langtech = {
   title: 'LANGUAGES & TECHNOLOGIES',
 }
@@ -68,12 +69,13 @@ return (<div id='web-development'>
     </div>
     <Section
       category = {education}
-      color = 'White'/>
+      color = 'white'/>
     <Section
       category = {examples}
-      color = 'Gray'/>
+      color = 'lightgray'/>
     <Section
       category = {langtech}
+      color = 'white'
       grid = {true}/>
     <Footer/>
 </div>)

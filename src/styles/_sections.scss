@@ -1,10 +1,14 @@
-.white-section{
+.section{
   @include column;
   text-align: center;
   padding: 25px 15px;
 }
-  #gray{
-    background: $ghostwhite;
+
+  #white{
+    background: white;
+  }
+  #lightgray{
+    background: $lightgray;
   }
   .line{
     background: #de662d;

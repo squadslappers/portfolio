@@ -1,10 +1,16 @@
 import React from 'react';
 
+
 const Card = (props) => {
+  let color = 'white';
+  if (props.color === 'white') {
+    color='lightgray';
+  }
+
 return(
-<div className='card'>
+<div className='card' id={color}>
   <div className='card-header'>
-    <div className='circle' 
+    <div className='circle'
       id={props.context}
     />
     <div>

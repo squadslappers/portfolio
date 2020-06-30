@@ -1,12 +1,9 @@
-$goldenrod: #f2a539;
-$goldenrod: #424242;
-$cornflowerblue: #4bafec;
 $cornflowerblue: #005183;
 $ghostwhite: #f9fafa;
-// $darkslategray: #143846;
-$lightgray: #afafaf;
-// $lightgray: #de662d;
-$shadow: #979797;
+
+$darkgray: #424242;
+$gray: #808080;
+$lightgray: #ecedee;
 
 // 'Roboto'
 // 'Lato'
@@ -31,11 +28,9 @@ $shadow: #979797;
   box-sizing: border-box;
 }
 p {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 18px;
-  font-family: 'Lato';
-  font-weight: bold;
-  color: $goldenrod;
+  color: $darkgray;
 }
 header{
   font-weight: bold;
@@ -48,7 +43,7 @@ h1, h2, h3, h4, h5{
 h1 {font-family: 'Lato';}
 h2 {font-size: 20px; color: $cornflowerblue;}
 h4{font-family: 'Roboto';}
-span{color: $lightgray;}
+span{color: $gray;}
 
 @import './card';
 @import './headfoot';
