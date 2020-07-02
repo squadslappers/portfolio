@@ -58,6 +58,7 @@ span {
 
 .card {
   width: 100%;
+  max-width: 700px;
   background: #f8f8f8;
   text-align: left;
   margin-bottom: 15px;
@@ -82,17 +83,12 @@ span {
   width: 40px;
   border-radius: 30px;
   border: 2px solid #de662d;
-  background: #de662d;
   margin-right: 20px;
   background-size: cover;
 }
 
 #Udemy {
   background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Logo_Udemy.png");
-}
-
-#DevMountain {
-  background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Logo_DevMtn3.png");
 }
 
 #header {

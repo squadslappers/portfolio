@@ -41,8 +41,8 @@ const education = {
     }
   ]
 }
-const examples = {
-  title: 'EXAMPLES',
+const personalProjects = {
+  title: 'PERSONAL PROJECTS',
   cards: [
     {
       title: 'SuppleBudget',
@@ -50,13 +50,22 @@ const examples = {
       description: 'This dynamic application makes budgeting fast, simple, and easy for people with inconsistent incomes.'
     },
     {
-      title: 'Employment',
+      title: 'FamilyPointer',
       context: 'Personal • Almost Hosted',
       description: 'This simple tool enables parents to encourage healthy habits in their young children by using a system of Opportunities and Rewards.'
     }
   ]
 }
-
+const experience = {
+  title: 'EXPERIENCE',
+  cards: [
+    {
+      title: 'Full-Stack Developer (Volunteer)',
+      context: 'SlideKick • Remote',
+      description: 'I recently accepted a role as a volunteer web developer for SlideKick, a local startup company. The experience I have gained has increased my confidence and prepared me for a job in the development field'
+    }
+  ]
+}
 const langtech = {
   title: 'LANGUAGES & TECHNOLOGIES',
 }
@@ -71,11 +80,14 @@ return (<div id='web-development'>
       category = {education}
       color = 'white'/>
     <Section
-      category = {examples}
+      category = {experience}
       color = 'lightgray'/>
     <Section
+      category = {personalProjects}
+      color = 'white'/>
+    <Section
       category = {langtech}
-      color = 'white'
+      color = 'lightgray'
       grid = {true}/>
     <Footer/>
 </div>)

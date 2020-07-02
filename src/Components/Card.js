@@ -1,4 +1,5 @@
 import React from 'react';
+import DevMtn from '../DevMtn.png'
 
 
 const Card = (props) => {
@@ -12,6 +13,7 @@ return(
   <div className='card-header'>
     <div className='circle'
       id={props.context}
+      src={DevMtn}
     />
     <div>
       <h2>{props.title}</h2>
