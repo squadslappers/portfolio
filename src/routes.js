@@ -5,6 +5,6 @@ import WebDevelopment from './Components/WebDev';
 
 export default(
     <Switch>
-        <Route path='/web-development' component={WebDevelopment}/>
+        <Route exact path='/' component={WebDevelopment}/>
     </Switch>
 )

@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 const WebDevelopment = () => {
-
+console.log('Loaded Successfully');
 const education = {
   title: 'EDUCATION',
   cards: [
