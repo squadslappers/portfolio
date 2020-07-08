@@ -82,13 +82,10 @@ span {
   height: 40px;
   width: 40px;
   border-radius: 30px;
-  border: 2px solid #de662d;
+  border: 3px solid #de662d;
+  background: #de662d;
   margin-right: 20px;
   background-size: cover;
-}
-
-#Udemy {
-  background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Logo_Udemy.png");
 }
 
 #header {

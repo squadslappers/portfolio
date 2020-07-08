@@ -16,6 +16,7 @@ const WhiteMain = (props) => {
           return (
             <Card
             key={index}
+            image={card.image}
             title={card.title}
             context={card.context}
             description={card.description}

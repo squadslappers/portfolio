@@ -1,6 +1,4 @@
 import React from 'react';
-import DevMtn from '../DevMtn.png'
-
 
 const Card = (props) => {
   let color = 'white';
@@ -11,9 +9,9 @@ const Card = (props) => {
 return(
 <div className='card' id={color}>
   <div className='card-header'>
-    <div className='circle'
+    <img className='circle'
       id={props.context}
-      src={DevMtn}
+      src={props.image}
     />
     <div>
       <h2>{props.title}</h2>
