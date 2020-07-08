@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter;
 
 ReactDOM.render(
-<HashRouter><App /></HashRouter>, document.getElementById('root'));
+<Router><App /></Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
