@@ -38,6 +38,10 @@ span {
   color: #808080;
 }
 
+#obligatory-div {
+  min-height: 100vh;
+}
+
 .cards {
   width: 100%;
 }
@@ -116,7 +120,7 @@ span {
   background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/Icon_HamburgerMenu.png");
 }
 
-#mini-header {
+.mini-header {
   height: 450px;
   width: 100vw;
   display: -webkit-box;
@@ -134,12 +138,19 @@ span {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 60px;
+}
+
+.mini-header h1 {
+  font-family: 'Montserrat';
+  color: white;
+}
+
+#blue-header {
   background: #005183;
 }
 
-#mini-header h1 {
-  font-family: 'Montserrat';
-  color: white;
+#red-header {
+  background: #a10000;
 }
 
 #footer-main {
@@ -199,10 +210,13 @@ span {
 }
 
 .line {
-  background: #de662d;
   margin: 20px;
   height: 5px;
   width: 120px;
+}
+
+#orange-line {
+  background: #de662d;
 }
 
 .icon-grid {

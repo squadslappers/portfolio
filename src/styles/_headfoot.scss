@@ -13,7 +13,7 @@
   background-size: contain;
 }
   #hamburger{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/Icon_HamburgerMenu.png')}
-#mini-header{
+.mini-header{
   @include dim(450px, 100vw);
   @include column;
   h1{
@@ -23,7 +23,12 @@
   text-align: center;
   justify-content: center;
   padding: 0px 60px;
+}
+#blue-header{
   background: $cornflowerblue;
+}
+#red-header{
+  background: rgb(161, 0, 0);
 }
 // GOOD
 #footer-main{

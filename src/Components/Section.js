@@ -7,7 +7,7 @@ import LangTech from './LangTech';
 const WhiteMain = (props) => {
   return(<div className='section' id={props.color}>
     <h1>{props.category.title}</h1>
-    <div className='line'/>
+    <div className='line' id='orange-line'/>
     {props.grid ?
       <LangTech/>
       :

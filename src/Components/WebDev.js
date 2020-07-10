@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import {themeContext} from '../App';
 
 import Section from './Section';
 import Footer from './Footer';
@@ -11,7 +13,7 @@ import SuppleBudget from '../styles/images/SuppleBudget.png';
 import FamilyPointer from '../styles/images/FamilyPointer.png';
 
 const WebDevelopment = () => {
-console.log('Loaded Successfully');
+
 const education = {
   title: 'EDUCATION',
   cards: [
@@ -85,26 +87,25 @@ const langtech = {
   title: 'LANGUAGES & TECHNOLOGIES',
 }
 
-return (<div id='web-development'>
-    <Header
-      title='WEB DEVELOPMENT'/>
-    <div id='mini-header'>
-      <h1>HI, I'M JAKE AND I'M A WEB DEVELOPER</h1>
-    </div>
-    <Section
-      category = {education}
-      color = 'white'/>
-    <Section
-      category = {experience}
-      color = 'lightgray'/>
-    <Section
-      category = {personalProjects}
-      color = 'white'/>
-    <Section
-      category = {langtech}
-      color = 'lightgray'
-      grid = {true}/>
-    <Footer/>
+return (<div id='obligatory-div'>
+  <Header title='WEB DEVELOPMENT'/>
+  <div className='mini-header' id='blue-header'>
+    <h1>HI, I'M JAKE AND I'M A WEB DEVELOPER</h1>
+  </div>
+  <Section
+    category = {education}
+    color = 'white'/>
+  <Section
+    category = {experience}
+    color = 'lightgray'/>
+  <Section
+    category = {personalProjects}
+    color = 'white'/>
+  <Section
+    category = {langtech}
+    color = 'lightgray'
+    grid = {true}/>
+  <Footer/>
 </div>)
 }
 

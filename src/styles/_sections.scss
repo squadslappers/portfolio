@@ -11,7 +11,9 @@
     background: $lightgray;
   }
   .line{
-    background: #de662d;
     margin: 20px;
     @include dim(5px, 120px);
+  }
+  #orange-line{
+    background: #de662d;
   }

@@ -45,6 +45,10 @@ h2 {font-size: 20px; color: $cornflowerblue;}
 h4{font-family: 'Roboto';}
 span{color: $gray;}
 
+#obligatory-div{
+  min-height: 100vh;
+}
+
 @import './card';
 @import './headfoot';
 @import './sections';
