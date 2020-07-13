@@ -19,9 +19,9 @@ export const themeContext = createContext(themes.dark);
 function App() {
 return (
     <div className="App">
-      <themeContext.Provider value={themes.dark}>
+      {/* <themeContext.Provider value={themes.dark}>
         <button style={{background: themes.background, color: themes.foreground}}>hi</button>
-      </themeContext.Provider>
+      </themeContext.Provider> */}
         {routes}
     </div>
 );

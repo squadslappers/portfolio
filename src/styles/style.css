@@ -92,6 +92,10 @@ span {
   background-size: cover;
 }
 
+#blue {
+  color: #005183;
+}
+
 #header {
   padding: 10px 15px;
   z-index: 2;
@@ -301,5 +305,27 @@ span {
 
 #sass {
   background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/LangTech_Sass.PNG");
+}
+
+.blog-card {
+  padding: 30px 30px;
+  padding-bottom: 0px;
+}
+
+.blog-card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto-fit, minmax(300px, auto);
+      grid-template-columns: auto-fit, minmax(300px, auto);
+}
+
+#blue {
+  color: #de662d;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  background: #de662d;
 }
 /*# sourceMappingURL=style.css.map */

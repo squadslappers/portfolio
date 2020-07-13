@@ -1,0 +1,19 @@
+.blog-card{
+  padding: 30px 30px;
+  padding-bottom: 0px;
+}
+
+.blog-card-grid{
+  display: grid;
+  grid-template-columns: auto-fit, minmax(300px, auto);
+}
+
+#blue {
+  color: $orange;
+}
+
+.img{
+  width: 200px;
+  height: 200px;
+  background: $orange;
+}

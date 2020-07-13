@@ -78,13 +78,28 @@ const experience = {
     {
       image: SlideKick,
       title: 'Full-Stack Developer Volunteer',
-      context: 'SlideKick • Remote',
+      context: 'SlideKick • June 2020 - Present',
       description: 'I recently accepted a role as a volunteer web developer for a local startup company. The experience I have gained has increased my confidence and prepared me for a job in the development field.'
     }
   ]
 }
 const langtech = {
   title: 'LANGUAGES & TECHNOLOGIES',
+}
+const blog = {
+  title: 'BLOG',
+  cards: [
+    {
+      title: 'Placeholder 1',
+      context: 'Coming soon',
+      description: "I'm in the process of adding a blog to my portfolio. This is where I'll write about my experience with web development and the road I took from knowing nothing about coding to graduating from DevMountain and becoming a software engineer."
+    },
+    {
+      title: 'Placeholder 2',
+      context: 'Coming soon',
+      description: "I'll cover a variety of topics, including things I've learned lately, my daily routine, advice I've received from successful web developers, the classes and courses I've found to be most helpful, and more."
+    }
+  ]
 }
 
 return (<div id='obligatory-div'>
@@ -105,6 +120,9 @@ return (<div id='obligatory-div'>
     category = {langtech}
     color = 'lightgray'
     grid = {true}/>
+  <Section
+    category = {blog}
+    color = 'white'/>
   <Footer/>
 </div>)
 }
