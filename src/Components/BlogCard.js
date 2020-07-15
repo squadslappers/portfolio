@@ -5,15 +5,22 @@ const BlogCard = (props) => {
   let color = 'lightgray';
 
   if (props.index%2===0) {
-    console.log(props.index);
     color = 'white'
   }
 
   return(<div className='blog-card' id={color}>
-    <h1 className='header' id='blue'>{props.heading}</h1>
-    <div className='blog-card-grid'>
+    <div className='blog-content'>
+      <h1 className='header' id='blue'>{props.heading}</h1>
+      <div className='blog-card-grid'>
+        <p>{props.content}</p>
+        {props.image ? <img className='img'></img>: null}
+      </div>
+      <ul>
+        {props.bullet ? props.bullet.map((point, i) =>{
+          return <li key={i}>{point}</li>
+        }):null}
+      </ul>
       <p>{props.content}</p>
-      <img className='img'>{props.image}</img>
     </div>
   </div>)
 }
