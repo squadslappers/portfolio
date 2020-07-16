@@ -92,12 +92,14 @@ const blog = {
     {
       title: 'Placeholder 1',
       context: 'Coming soon',
-      description: "I'm in the process of adding a blog to my portfolio. This is where I'll write about my experience with web development and the road I took from knowing nothing about coding to graduating from DevMountain and becoming a software engineer."
+      description: "I'm in the process of adding a blog to my portfolio. This is where I'll write about my experience with web development and the road I took from knowing nothing about coding to graduating from DevMountain and becoming a software engineer.",
+      link: '/test-blog'
     },
     {
       title: 'Placeholder 2',
       context: 'Coming soon',
-      description: "I'll cover a variety of topics, including things I've learned lately, my daily routine, advice I've received from successful web developers, the classes and courses I've found to be most helpful, and more."
+      description: "I'll cover a variety of topics, including things I've learned lately, my daily routine, advice I've received from successful web developers, the classes and courses I've found to be most helpful, and more.",
+      link: '/test-blog'
     }
   ]
 }

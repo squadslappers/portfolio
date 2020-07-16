@@ -50,6 +50,12 @@ span{color: $gray;}
 #obligatory-div{
   min-height: 100vh;
 }
+a{
+  text-decoration: none;
+  &:hover{
+    cursor: pointer
+  }
+}
 
 @import './card';
 @import './headfoot';

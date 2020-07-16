@@ -42,6 +42,14 @@ span {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 .cards {
   width: 100%;
 }
@@ -307,56 +315,42 @@ span {
   background-image: url("https://squidslippers.s3-us-west-1.amazonaws.com/LangTech_Sass.PNG");
 }
 
-.blog-div {
-  margin: 0 auto;
-}
-
-.blog-card {
-  padding: 30px 30px;
-}
-
 .blog-content {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.blog-content h1 {
+  margin-bottom: 10px;
 }
 
 .blog-content p {
   margin: 0px;
-  margin-top: 15px;
 }
 
-.blog-card-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 20px;
+.blog-content ul {
+  color: #424242;
 }
 
-@media (max-width: 780px) {
-  .blog-card-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .img {
-    width: 100px;
-  }
+.blog-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
 }
 
-#blue {
+#orange {
   color: #de662d;
 }
 
 .img {
-  width: 300px;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 600px;
   height: 200px;
   background: #de662d;
 }

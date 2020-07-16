@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Card = (props) => {
   let color = 'white';
@@ -13,10 +14,17 @@ return(
       id={props.context}
       src={props.image}
     />
+    {props.link ?
+    <Link to={props.link}><div>
+      <h2>{props.title}</h2>
+      <span>{props.context}</span>
+    </div></Link>
+    :
     <div>
       <h2>{props.title}</h2>
       <span>{props.context}</span>
     </div>
+  }
   </div>
   <p>{props.description}</p>
 </div>

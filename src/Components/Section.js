@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import LangTech from './LangTech';
-
-
+import {Link} from 'react-router-dom';
 
 const WhiteMain = (props) => {
   return(<div className='section' id={props.color}>
@@ -20,10 +19,12 @@ const WhiteMain = (props) => {
             title={card.title}
             context={card.context}
             description={card.description}
+            link={card.link}
             color={props.color}
             />
           )
-        })}</div>
+        })}
+      </div>
     }
   </div>)
 }
