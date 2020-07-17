@@ -343,6 +343,13 @@ a:hover {
   padding: 15px;
 }
 
+#tldr {
+  margin-top: 15px;
+  border-radius: 15px;
+  background: #f8f8f8;
+  padding: 15px;
+}
+
 #orange {
   color: #de662d;
 }
