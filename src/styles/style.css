@@ -318,14 +318,12 @@ a:hover {
 .blog-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .blog-content h1 {
-  margin-bottom: 10px;
-}
-
-.blog-content p {
-  margin: 0px;
+  margin-top: 15px;
+  color: #de662d;
 }
 
 .blog-content ul {
@@ -341,13 +339,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px;
-}
-
-#tldr {
-  margin-top: 15px;
-  border-radius: 15px;
-  background: #f8f8f8;
-  padding: 15px;
+  color: red;
 }
 
 #orange {
