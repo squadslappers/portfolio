@@ -2,11 +2,11 @@ import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
 import WebDevelopment from './Components/WebDev';
-import TestBlog from './Components/TestBlog/TestBlog';
+import SimplifyJS from './Components/SimplifyJS/SimplifyJS';
 
 export default(
   <Switch>
     <Route exact path='/' component={WebDevelopment}/>
-    <Route path = '/test-blog' component = {TestBlog}/>
+    <Route path = '/blog/simplify-javascript' component = {SimplifyJS}/>
   </Switch>
 )

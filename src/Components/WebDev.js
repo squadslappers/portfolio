@@ -11,6 +11,7 @@ import Udemy from '../styles/images/Udemy.png';
 import SlideKick from '../styles/images/SlideKick.png';
 import SuppleBudget from '../styles/images/SuppleBudget.png';
 import FamilyPointer from '../styles/images/FamilyPointer.png';
+import JavaScript from '../styles/images/JavaScript.png';
 
 const WebDevelopment = () => {
 
@@ -90,16 +91,11 @@ const blog = {
   title: 'BLOG',
   cards: [
     {
-      title: 'Placeholder 1',
-      context: 'Coming soon',
-      description: "I'm in the process of adding a blog to my portfolio. This is where I'll write about my experience with web development and the road I took from knowing nothing about coding to graduating from DevMountain and becoming a software engineer.",
-      link: '/test-blog'
-    },
-    {
-      title: 'Placeholder 2',
-      context: 'Coming soon',
-      description: "I'll cover a variety of topics, including things I've learned lately, my daily routine, advice I've received from successful web developers, the classes and courses I've found to be most helpful, and more.",
-      link: '/test-blog'
+      image: JavaScript,
+      title: 'A Quick Tip to Simplify JavaScript',
+      context: 'July 07, 2020',
+      description: "TL;DR: When you're overwhelmed by JavaScript, focus on what data types you're working with and what you're doing with them.",
+      link: '/blog/simplify-javascript'
     }
   ]
 }

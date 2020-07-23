@@ -90,6 +90,7 @@ const Blog = (props) => {
     </div>
     {/* <Footer/> */}
     <BlogFooter/>
+    <Footer/>
   </div>)
 }
 export default Blog;
