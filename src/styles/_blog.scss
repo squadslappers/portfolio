@@ -5,7 +5,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 0px 15px;
-  h1{margin-top: 15px; color: $orange}
+  h1{margin-top: 15px; color: $orange; font-family: Roboto}
   ul{color: $darkgray}
   p{
     margin: 8px 0px;
@@ -29,8 +29,9 @@
 }
 
 .blog-image{
-  margin: 15px 0px;
+  margin: 15px auto;
   width: 100%;
+  max-width: 400px;
 }
 
 #orange {

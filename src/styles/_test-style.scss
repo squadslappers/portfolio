@@ -1,0 +1,30 @@
+@mixin section {
+  @include column;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.white-section{
+  @include section;
+}
+.lightgray-section{
+  @include section;
+  background: $lightgray;
+}
+
+.orange-line{
+  margin: 20px;
+  @include dim(5px, 120px);
+  background: #de662d;
+}
+
+.gray-card{
+  width: 100%;
+  max-width: 700px;
+  background: $lightgray;
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+}

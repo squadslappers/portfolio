@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import Undefined from './Undefined.jpg';
-import DataTypes from './DataTypes.jpg';
 import BlogFooter from '../BlogFooter';
 
 const Blog = (props) => {
@@ -24,7 +22,7 @@ const Blog = (props) => {
       <p>
         We’ve all been there. JavaScript is tough. It’s complicated. It confuses even the most seasoned developers at one time or another. And if you’re a bootcamp grad like me, it was likely thrown at your face at what felt like the speed of light. So don’t beat yourself up when you don’t understand what’s happening; that’s a natural — and expected — part of the process.
       </p>
-      <img className='blog-image' src = {Undefined} alt='undefined'/>
+      <img className='blog-image' src={require('./Undefined.jpg')} alt='undefined'/>
       <h1>There's Always More to Learn</h1>
       <p>
         One of the fundamental truths about development is there’s always more to learn. I think that’s one of the most beautiful things about it, and it’s the main reason I decided to become a software engineer.
@@ -55,7 +53,7 @@ const Blog = (props) => {
       <p>
         And my revelation happened when I realized that arrays and objects are simply collections of the first four on the list, and functions usually return (or resolve to) any of the other data types. It was a big moment for me.
       </p>
-      <img className='blog-image' src = {DataTypes} alt='data types'/>
+      <img className='blog-image' src={require('./DataTypes.jpg')} alt='data types'/>
       <h1>All You Need Is CRUD</h1>
       <p>
         When we dove into RESTful API development, I realized another one of the fundamental truths: <strong>All you can do is...</strong>
@@ -88,7 +86,6 @@ const Blog = (props) => {
         Now you have a clear objective. Now things are a little more simple and less confusing. Now you've made a little bit of progress, which is what development is all about.
       </p>
     </div>
-    {/* <Footer/> */}
     <BlogFooter/>
     <Footer/>
   </div>)
