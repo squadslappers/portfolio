@@ -13,7 +13,7 @@ return(
     <a href='tel:8018678774'>
       <img alt='phone' src='https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Phone.PNG' height='50px' width='50px'/>
     </a>
-    <a href='https://drive.google.com/file/d/1JlKHUNogzgNnm5fYUr_9_SHaOroRsHoM/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+    <a href='https://drive.google.com/file/d/1sa_xurtVmd_ePZvSo7PB9f1hoYojmZT2/view?usp=sharing' target='_blank' rel="noopener noreferrer">
       <img alt='resume' src='https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Resume.PNG' height='50px' width='50px'/>
     </a>
     <a href='https://www.twitter.com/squidslippers' target='_blank' rel="noopener noreferrer">
