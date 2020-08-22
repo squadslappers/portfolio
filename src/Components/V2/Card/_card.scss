@@ -1,0 +1,37 @@
+@mixin card-div{
+  width: 100%;
+  color: $cornflowerblue;
+  border-radius: 10px;
+  padding: 15px;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px -5px rgb(92, 92, 92);
+  }
+}
+.gray-card-div{
+  @include card-div;
+  background: #eee;
+}
+.white-card-div{
+  @include card-div;
+  background: white;
+}
+.card-header{
+  display: flex;
+}
+.card-icon{
+  @include dim(45px, 45px);
+  border-radius: 30px;
+  background: $gray;
+  margin-right: 15px;
+}
+.card-main-info{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  p{
+    margin: 5px 0px;
+    color: gray;
+  }
+}

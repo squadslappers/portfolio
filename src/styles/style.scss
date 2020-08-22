@@ -63,3 +63,9 @@ a{
 @import './langtech';
 @import './blog';
 @import './test-style';
+
+@import '../Components/V2/Header/header';
+@import '../Components/V2/MiniHeader/miniHeader';
+@import '../Components/V2/SoftwareEngineer/softwareEngineer';
+@import '../Components/V2/SoftwareEngineer/sections';
+@import '../Components/V2/Card/card';

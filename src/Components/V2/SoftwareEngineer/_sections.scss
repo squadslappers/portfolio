@@ -1,0 +1,29 @@
+@mixin section {
+  @include column;
+  text-align: center;
+  padding: 25px 15px;
+  padding-bottom: 30px;
+  h2{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 25px
+  }
+}
+
+.white-section{
+  @include section;
+}
+
+.gray-section{
+  @include section;
+  background: $lightgray;
+}
+
+.grid{
+  // background: $darkgray;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 425px));
+  grid-gap: 25px;
+}

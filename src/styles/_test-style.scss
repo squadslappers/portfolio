@@ -1,14 +1,14 @@
-@mixin section {
-  @include column;
-  text-align: center;
-  padding: 25px 15px;
-}
+// @mixin section {
+//   @include column;
+//   text-align: center;
+//   padding: 25px 15px;
+// }
 
-.white-section{
-  @include section;
-}
+// .white-section{
+//   @include section;
+// }
 .lightgray-section{
-  @include section;
+  // @include section;
   background: $lightgray;
 }
 

@@ -13,14 +13,15 @@ const Blog = (props) => {
     </div>
     <div className = 'blog-content'>
       <div className='tldr'>
-        TL;DR: When you're overwhelmed by JavaScript, focus on what data types you're working with and what you're doing with them.
+        <h3>Too Long; Didn't Read</h3>
+        When you're overwhelmed by JavaScript, focus on what data types you're working with and what you're doing with them.
       </div>
       <h1>JavaScript Is Confusing</h1>
       <p>
         Picture this: You’re seven functions deep in a chain of functions and you’re lost. After 4 hours of coding, this data chain is too long for you to handle. <i>Where is this function called? What is this parameter that’s being passed in? <strong>WHY IS THIS UNDEFINED?!</strong></i>
       </p>
       <p>
-        We’ve all been there. JavaScript is tough. It’s complicated. It confuses even the most seasoned developers at one time or another. And if you’re a bootcamp grad like me, it was likely thrown at your face at what felt like the speed of light. So don’t beat yourself up when you don’t understand what’s happening; that’s a natural — and expected — part of the process.
+        We’ve all been there. JavaScript is tough. It’s complicated. It confuses even the most seasoned developers at one time or another. And depending on how you learned to code, it was likely thrown at your face at what felt like the speed of light. So don’t beat yourself up when you don’t understand what’s happening—that’s a natural and expected part of the process.
       </p>
       <img className='blog-image' src={require('./Undefined.jpg')} alt='undefined'/>
       <h1>There's Always More to Learn</h1>
@@ -83,7 +84,7 @@ const Blog = (props) => {
         <li><i>I'm getting an array of objects of strings, numbers, and booleans.</i></li>
       </ul>
       <p>
-        Now you have a clear objective. Now things are a little more simple and less confusing. Now you've made a little bit of progress, which is what development is all about.
+        Hopefully this simple trick will help you find your footing when you feel like you have no idea how to proceed.
       </p>
     </div>
     <BlogFooter/>

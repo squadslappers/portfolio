@@ -1,0 +1,47 @@
+#mini-header2{
+  @include dim(550px, 100vw);
+  @include column;
+  h1{
+    font-family: 'Montserrat';
+    color: $cornflowerblue;
+    width: 400px;
+    position: absolute;
+    right: 150px;
+    z-index: 4;
+  }
+  text-align: center;
+  justify-content: center;
+  padding: 0px 60px;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+@media(max-width: 700px) {
+  #mini-header2{
+    h1{
+      position: relative;
+      left: 0;
+      font-size: 20px;
+      width: 200px;
+    }
+  }
+}
+
+#mini-header-pic{
+  height: 900px;
+  position: absolute;
+  left: 50px;
+  opacity: 0.4;
+  z-index: 3;
+}
+@media(max-width: 1250px){
+  #mini-header-pic{
+    height: 700px;
+    left: 0px;
+    opacity: 0.3;
+  }
+}
+#mini-header-title{
+  color: white;
+}
