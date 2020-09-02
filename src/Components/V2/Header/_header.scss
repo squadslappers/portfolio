@@ -4,11 +4,7 @@
   @include row(space-between);
   position: sticky;
     top: 0px;
-  background: black;
+  background: $darkgray;
   color: white;
   box-shadow: 0px 0px 15px 0px black;
-  h2{
-    color: white;
-    z-index: 5;
-  }
 }

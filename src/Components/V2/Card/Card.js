@@ -12,11 +12,9 @@ const Card = (props) => {
       <div className='card-icon'/>
       <div className='card-main-info'>
         <h3>{props.title}</h3>
-        <p>{props.details}</p>
-        <span>{props.date}</span>
+        <p>{props.details} • {props.date}</p>
       </div>
     </div>
-      {/* <p>{description}</p> */}
   </div>);
 }
 export default Card;
