@@ -4,10 +4,10 @@ const Card = (props) => {
   const [showMore, toggleMore] = useState(false);
 
   const button1 = props.button1
-    ? <button className={props.buttonColor + '-card-button'}>{props.button1}</button>
+    ? <a className={props.buttonColor + '-card-button'} href={props.href1} target='_blank' rel="noopener noreferrer">{props.button1}</a>
     : null;
   const button2 = props.button2
-    ? <button className={props.buttonColor + '-card-button'}>{props.button2}</button>
+    ? <a className={props.buttonColor + '-card-button'} href={props.href1} target='_blank' rel="noopener noreferrer">{props.button2}</a>
     : null;
 
   return (<div className={props.background + '-card-div'} onClick={()=>toggleMore(showMore ? false:true)}>

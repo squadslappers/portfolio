@@ -21,11 +21,13 @@ const SoftwareEngineer = (props) => {
           title='Full-Stack Software Engineer'
           details='SlideKick'
           button1='SEE IT LIVE'
+          href1='https://slidekick.us/#/'
           date='Jun 2020 — Present'/>
         <Card background='gray' buttonColor='white'
           icon={SlideKick}
           title='UX/UI Designer'
           details='SJ Photography'
+          href1='https://www.samueljake.com/'
           date='Jul 2020 — Present'
           button1='SEE IT LIVE'
           />
@@ -46,41 +48,57 @@ const SoftwareEngineer = (props) => {
           title='Software Development'
           details='Devmountain'
           date='Oct 2019 — Jan 2020'
-          button1='VIEW THE COURSE'/>
+          button1='VIEW THE COURSE'
+          href1='https://devmountain.com/web-bootcamp-immersive'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='The Complete JavaScript Course'
           details='Udemy'
           date='Jan 2020 — Mar 2020'
           button1='VIEW THE COURSE'
-          button2='VIEW MY CODE'/>
+          href1='https://www.udemy.com/course/the-complete-javascript-course/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='React — The Complete Guide'
           details='Udemy'
           date='Feb 2020 — Mar 2020'
           button1='VIEW THE COURSE'
-          button2='VIEW MY CODE'/>
+          href1='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='React Native — The Practical Guide'
           details='Udemy'
           date='Apr 2020 — Present'
           button1='VIEW THE COURSE'
-          button2='VIEW MY CODE'/>
+          href1='https://www.udemy.com/course/react-native-the-practical-guide/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='Angular — The Complete Guide'
           details='Udemy'
           date='Jun 2020 — Present'
           button1='VIEW THE COURSE'
-          button2='VIEW MY CODE'/>
-        <Card background='white' buttonColor='gray'
+          href1='https://www.udemy.com/course/the-complete-guide-to-angular-2/'/>
+        {/* <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='Computer Science 101'
           details='Udemy'
           date='Apr 2020 — Apr 2020'
-          button1='VIEW THE COURSE'/>
+          button1='VIEW THE COURSE'
+          href1='https://www.udemy.com/course/computer-science-101-master-the-theory-behind-programming/'/> */}
+        <Card background='white' buttonColor='gray'
+          icon={Udemy}
+          title='The Complete SQL Bootcamp'
+          details='Udemy'
+          date='Aug 2020 — Present'
+          button1='VIEW THE COURSE'
+          href1='https://www.udemy.com/course/the-complete-sql-bootcamp/'/>
+        {/* <Card background='white' buttonColor='gray'
+          icon={Udemy}
+          title='The Complete iOS App Development Bootcamp'
+          details='Udemy'
+          date='Aug 2020 — Present'
+          button1='VIEW THE COURSE'
+          href1='https://www.udemy.com/course/ios11-app-development-bootcamp/'/> */}
       </div>
     </div>
 

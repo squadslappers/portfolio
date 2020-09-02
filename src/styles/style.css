@@ -734,12 +734,25 @@ a:hover {
   color: #005183;
   font-weight: bold;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: white;
 }
 
 .white-card-button:hover {
   cursor: pointer;
   border: 2px solid #005183;
+}
+
+.white-card-button a {
+  color: #005183;
 }
 
 .gray-card-button {
@@ -749,11 +762,24 @@ a:hover {
   color: #005183;
   font-weight: bold;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #eee;
 }
 
 .gray-card-button:hover {
   cursor: pointer;
   border: 2px solid #005183;
+}
+
+.gray-card-button a {
+  color: #005183;
 }
 /*# sourceMappingURL=style.css.map */
