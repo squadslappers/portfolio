@@ -728,7 +728,7 @@ a:hover {
 }
 
 .white-card-button {
-  width: 48%;
+  width: 100%;
   height: 30px;
   border-radius: 20px;
   color: #005183;
@@ -756,7 +756,7 @@ a:hover {
 }
 
 .gray-card-button {
-  width: 48%;
+  width: 100%;
   height: 30px;
   border-radius: 20px;
   color: #005183;

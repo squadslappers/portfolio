@@ -3,16 +3,19 @@ import React from 'react';
 import Header from '../Header/Header';
 import MiniHeader2 from '../MiniHeader/MiniHeader';
 import Card from '../Card/Card';
+import Footer from '../Footer/Footer';
 import Form from './Form';
 
 import Devmtn from '../Images/Devmtn.png';
 import Udemy from '../Images/Udemy.png';
 import SlideKick from '../Images/SlideKick.png';
+import JavaScript from '../Images/JavaScript.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING'/>
     <MiniHeader2 title='SOFTWARE ENGINEER'/>
+
     <div className='white-section'>
       <h2>EXPERIENCE</h2>
       <div className='grid'>
@@ -40,6 +43,7 @@ const SoftwareEngineer = (props) => {
       </div>
       {/* <Form/> */}
     </div>
+
     <div className='gray-section'>
       <h2>EDUCATION</h2>
       <div className='grid'>
@@ -155,6 +159,21 @@ const SoftwareEngineer = (props) => {
         </div>
       </div>
     </div>
+
+    <div className='gray-section'>
+      <h2>RECENT BLOG POSTS</h2>
+      <div className='grid'>
+        <Card background='white' buttonColor='gray'
+          title='How to Suck at Coding'
+          details='Development'
+          date='Sep 8, 2020'
+          description='This is a blog post template. Once I actually write something, the TL;DR will appear here.'
+          button1='VIEW THE POST'/>
+      </div>
+    </div>
+
+    <Footer/>
+
   </div>)
 }
 export default SoftwareEngineer;

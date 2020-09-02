@@ -11,7 +11,7 @@ import Header from './Header';
 // // import SlideKick from '../styles/images/SlideKick.png';
 import SuppleBudget from '../styles/images/SuppleBudget.png';
 import FamilyPointer from '../styles/images/FamilyPointer.png';
-import JavaScript from '../styles/images/JavaScript.png';
+// import JavaScript from '../styles/images/JavaScript.png';
 
 const WebDevelopment = () => {
 
@@ -91,7 +91,7 @@ const blog = {
   title: 'BLOG',
   cards: [
     {
-      image: JavaScript,
+      // image: JavaScript,
       title: 'A Quick Tip to Simplify JavaScript',
       context: 'July 07, 2020',
       description: "TL;DR: When you're overwhelmed by JavaScript, focus on what data types you're working with and what you're doing with them.",

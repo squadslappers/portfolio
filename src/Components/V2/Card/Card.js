@@ -18,6 +18,7 @@ const Card = (props) => {
         <p>{props.details} • {props.date}</p>
       </div>
     </div>
+    {/* <span>{props.description}</span> */}
     <div className='card-buttons'>
       {button1}
       {button2}
