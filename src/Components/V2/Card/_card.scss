@@ -3,11 +3,13 @@
   color: $cornflowerblue;
   border-radius: 10px;
   padding: 15px;
+  /*
   &:hover{
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0px 5px 15px -5px rgb(92, 92, 92);
   }
+  */
 }
 .gray-card-div{
   @include card-div;
@@ -35,10 +37,35 @@
   p{
     margin: 5px 0px;
     font-size: 16px;
-    // font-weight: bold;
     color: $gray;
   }
   span{
     font-size: 16px;
   }
+}
+.card-buttons{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@mixin card-button{
+  width: 48%;
+  height: 30px;
+  border-radius: 20px;
+  color: $cornflowerblue;
+  font-weight: bold;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $cornflowerblue;
+  }
+}
+.white-card-button{
+  @include card-button;
+  background: white;
+}
+.gray-card-button{
+  @include card-button;
+  background: #eee;
 }
