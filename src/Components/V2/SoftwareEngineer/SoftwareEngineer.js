@@ -10,6 +10,8 @@ import Devmtn from '../Images/Devmtn.png';
 import Udemy from '../Images/Udemy.png';
 import SlideKick from '../Images/SlideKick.png';
 import JavaScript from '../Images/JavaScript.png';
+import SamJake from '../Images/SamJake.png';
+import HQRTCards from '../Images/HQRTCards.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
@@ -26,16 +28,16 @@ const SoftwareEngineer = (props) => {
           button1='SEE IT LIVE'
           href1='https://slidekick.us/#/'
           date='Jun 2020 — Present'/>
-        <Card background='gray' buttonColor='white'
-          icon={SlideKick}
+        {/* <Card background='gray' buttonColor='white'
+          icon={SamJake}
           title='UX/UI Designer'
           details='SJ Photography'
           href1='https://www.samueljake.com/'
           date='Jul 2020 — Present'
           button1='SEE IT LIVE'
-          />
+          /> */}
         <Card background='gray' buttonColor='white'
-          icon={SlideKick}
+          icon={HQRTCards}
           title='Web Developer'
           details='HQRTCards'
           date='Aug 2020 — Present'
@@ -160,7 +162,7 @@ const SoftwareEngineer = (props) => {
       </div>
     </div>
 
-    <div className='gray-section'>
+    {/* <div className='gray-section'>
       <h2>RECENT BLOG POSTS</h2>
       <div className='grid'>
         <Card background='white' buttonColor='gray'
@@ -170,7 +172,7 @@ const SoftwareEngineer = (props) => {
           description='This is a blog post template. Once I actually write something, the TL;DR will appear here.'
           button1='VIEW THE POST'/>
       </div>
-    </div>
+    </div> */}
 
     <Footer/>
 
