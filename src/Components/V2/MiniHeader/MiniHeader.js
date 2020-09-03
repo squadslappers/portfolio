@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MiniHeaderPic = require('./MiniHeaderPic.png');
+// const MiniHeaderPic = require('./MiniHeaderPic.png');
 
 const MiniHeader = (props) => {
   return (<div id='main-div'>

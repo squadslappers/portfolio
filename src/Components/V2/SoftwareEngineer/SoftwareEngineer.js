@@ -4,18 +4,18 @@ import Header from '../Header/Header';
 import MiniHeader2 from '../MiniHeader/MiniHeader';
 import Card from '../Card/Card';
 import Footer from '../Footer/Footer';
-import Form from './Form';
+// import Form from './Form';
 
 import Devmtn from '../Images/Devmtn.png';
 import Udemy from '../Images/Udemy.png';
 import SlideKick from '../Images/SlideKick.png';
-import JavaScript from '../Images/JavaScript.png';
-import SamJake from '../Images/SamJake.png';
+// import JavaScript from '../Images/JavaScript.png';
+// import SamJake from '../Images/SamJake.png';
 import HQRTCards from '../Images/HQRTCards.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
-    <Header title='SOFTWARE ENGINEERING'/>
+    <Header title='SOFTWARE ENGINEERING' alt='Squid-logo'/>
     <MiniHeader2 title='SOFTWARE ENGINEER'/>
 
     <div className='white-section'>
@@ -23,11 +23,19 @@ const SoftwareEngineer = (props) => {
       <div className='grid'>
         <Card background='gray' buttonColor='white'
           icon={SlideKick}
+          alt='SlideKick-logo'
           title='Full-Stack Software Engineer'
           details='SlideKick'
           button1='SEE IT LIVE'
           href1='https://slidekick.us/#/'
           date='Jun 2020 — Present'/>
+        <Card background='gray' buttonColor='white'
+          icon={HQRTCards}
+          alt='HQRT-Cards-logo'
+          title='Web Developer'
+          details='HQRTCards'
+          date='Aug 2020 — Present'
+          button1='COMING SOON'/>
         {/* <Card background='gray' buttonColor='white'
           icon={SamJake}
           title='UX/UI Designer'
@@ -36,12 +44,7 @@ const SoftwareEngineer = (props) => {
           date='Jul 2020 — Present'
           button1='SEE IT LIVE'
           /> */}
-        <Card background='gray' buttonColor='white'
-          icon={HQRTCards}
-          title='Web Developer'
-          details='HQRTCards'
-          date='Aug 2020 — Present'
-          button1='COMING SOON'/>
+
       </div>
       {/* <Form/> */}
     </div>
@@ -51,6 +54,7 @@ const SoftwareEngineer = (props) => {
       <div className='grid'>
         <Card background='white' buttonColor='gray'
           icon={Devmtn}
+          alt='Devmountain-logo'
           title='Software Development'
           details='Devmountain'
           date='Oct 2019 — Jan 2020'
@@ -58,6 +62,7 @@ const SoftwareEngineer = (props) => {
           href1='https://devmountain.com/web-bootcamp-immersive'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
+          alt='Udemy-logo'
           title='The Complete JavaScript Course'
           details='Udemy'
           date='Jan 2020 — Mar 2020'
@@ -65,6 +70,7 @@ const SoftwareEngineer = (props) => {
           href1='https://www.udemy.com/course/the-complete-javascript-course/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
+          alt='Udemy-logo'
           title='React — The Complete Guide'
           details='Udemy'
           date='Feb 2020 — Mar 2020'
@@ -72,6 +78,7 @@ const SoftwareEngineer = (props) => {
           href1='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
+          alt='Udemy-logo'
           title='React Native — The Practical Guide'
           details='Udemy'
           date='Apr 2020 — Present'
@@ -79,6 +86,7 @@ const SoftwareEngineer = (props) => {
           href1='https://www.udemy.com/course/react-native-the-practical-guide/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
+          alt='Udemy-logo'
           title='Angular — The Complete Guide'
           details='Udemy'
           date='Jun 2020 — Present'
@@ -93,6 +101,7 @@ const SoftwareEngineer = (props) => {
           href1='https://www.udemy.com/course/computer-science-101-master-the-theory-behind-programming/'/> */}
         <Card background='white' buttonColor='gray'
           icon={Udemy}
+          alt='Udemy-logo'
           title='The Complete SQL Bootcamp'
           details='Udemy'
           date='Aug 2020 — Present'

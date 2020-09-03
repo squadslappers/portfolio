@@ -3,13 +3,6 @@
   color: $cornflowerblue;
   border-radius: 10px;
   padding: 15px;
-  /*
-  &:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0px 5px 15px -5px rgb(92, 92, 92);
-  }
-  */
 }
 .gray-card-div{
   @include card-div;
@@ -71,4 +64,21 @@
 .gray-card-button{
   @include card-button;
   background: #eee;
+}
+
+@media(max-width: 500px) {
+  h3{
+    font-size: 18px;
+  };
+  .card-main-info{
+    p{
+      font-size: 15px;
+    }
+  }
+  .white-card-button{
+    font-size: 15px;
+  }
+  .gray-card-button{
+    font-size: 15px;
+  }
 }

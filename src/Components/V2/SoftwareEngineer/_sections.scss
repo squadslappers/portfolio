@@ -3,11 +3,6 @@
   text-align: center;
   padding: 25px 15px;
   padding-bottom: 30px;
-  h2{
-    color: black;
-    font-size: 30px;
-    margin-bottom: 25px
-  }
 }
 
 .white-section{
@@ -26,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(425px, 425px));
   grid-gap: 25px;
+  max-width: 1700px;
 }
 
 .icon-grid{
@@ -36,9 +32,11 @@
   grid-gap: 20px;
   width: 100%;
 }
+
 .icon-container{
   @include column;
 }
+
 .icon{
   z-index: 0;
   @include dim(75px, 75px);
@@ -60,3 +58,12 @@
   #react{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/LangTech_React.PNG')}
   #redux{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/LangTech_Redux.PNG')}
   #sass{background-image: url('https://squidslippers.s3-us-west-1.amazonaws.com/LangTech_Sass.PNG')}
+
+@media(max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 30px;
+    grid-row-gap: 15px;
+  }
+}

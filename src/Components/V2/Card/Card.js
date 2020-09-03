@@ -12,7 +12,7 @@ const Card = (props) => {
 
   return (<div className={props.background + '-card-div'} onClick={()=>toggleMore(showMore ? false:true)}>
     <div className='card-header'>
-      <img className='card-icon' src={props.icon}/>
+      <img className='card-icon' src={props.icon} alt={props.alt}/>
       <div className='card-main-info'>
         <h3>{props.title}</h3>
         <p>{props.details} • {props.date}</p>

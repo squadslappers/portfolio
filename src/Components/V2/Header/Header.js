@@ -4,7 +4,7 @@ import Squidslippers from '../Images/Squidslippers.png';
 
 const Header = (props) => {
     return(<div id='header2'>
-        <img className='header-icon' src={Squidslippers}/>
+        <img className='header-icon' src={Squidslippers} alt={props.alt}/>
         <header>{props.title}</header>
         <div className='header-icon'/>
     </div>)

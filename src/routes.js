@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import WebDevelopment from './Components/WebDev';
+// import WebDevelopment from './Components/WebDev';
 import SoftwareEngineer from './Components/V2/SoftwareEngineer/SoftwareEngineer'
 import SimplifyJS from './Components/SimplifyJS/SimplifyJS';
 
