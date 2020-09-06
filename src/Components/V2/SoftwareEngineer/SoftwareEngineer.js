@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../Header/Header';
-import MiniHeader2 from '../MiniHeader/MiniHeader';
+import MiniHeader from '../MiniHeader/MiniHeader';
 import Card from '../Card/Card';
 import Footer from '../Footer/Footer';
 // import Form from './Form';
@@ -16,7 +16,7 @@ import HQRTCards from '../Images/HQRTCards.png';
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING' alt='Squid-logo'/>
-    <MiniHeader2 title='SOFTWARE ENGINEER'/>
+    <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
 
     <div className='white-section'>
       <h2>EXPERIENCE</h2>

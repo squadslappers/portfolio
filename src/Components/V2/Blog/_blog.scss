@@ -1,0 +1,21 @@
+#blog-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#blog-content{
+  margin-top: 30px;
+  // border: 2px solid red;
+  width: 800px;
+}
+#blog-content p{
+  line-height: 1.5;
+  font-family: avenir;
+}
+.blog-list{
+  line-height: 1.5;
+}
+.blog-bold{
+  font-weight: bold;
+  color: $cornflowerblue;
+}

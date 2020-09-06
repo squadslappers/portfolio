@@ -5,7 +5,7 @@ import React from 'react';
 const MiniHeader = (props) => {
   return (<div id='main-div'>
     <div id='mini-header2'>
-      <h1>HI, I'M JAKE AND I'M A {props.title}</h1>
+      <h1>{props.title}</h1>
     </div>
   </div>);
 }
