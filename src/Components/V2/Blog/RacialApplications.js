@@ -1,18 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../Header/Header';
 import MiniHeader from '../MiniHeader/MiniHeader';
+import ExtraInfo from './ExtraInfo';
 
 const RacialApplications = (props) => {
+
+  const [date, setDate] = useState(false);
+  const [science, setScience] = useState(false);
+
+  const dateComment = date
+    ? <ExtraInfo
+      info="To illustrate this point: If I were going on a date and, before the date, said, 'How tall are you? Not that I care,' my date would likely think, 'If you really didn't care, you wouldn't be asking...'"/>
+    : null;
+  const scienceComment = science
+    ? <ExtraInfo
+      info='I am not a professional researcher, just a man who has been unemployed for far too long'/>
+    : null;
+
   return (<div id='blog-div'>
     <Header title='BLOG'/>
     <MiniHeader title='COOL BLOG TITLE HERE'/>
     <div id='blog-content'>
       <h2>The Hypothesis</h2>
       <p>
-        I have always wondered why job applications ask for your race. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer”. In my opinion, if they truly didn’t care, they wouldn’t ask in the first place. Following that logic, I decided that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
+        I have always wondered why job applications ask candidates for their race/ethnicity. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer.” In my opinion, <span className='blog-red' onClick={()=>setDate(date?false:true)}>if they truly didn’t care, they wouldn’t ask in the first place.</span> Following that logic, I figured that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
       </p>
       <p>
-        After coming up with that hypothesis, I decided to do some “science” (I am not a professional researcher, just a man who has been unemployed for far too long) and put it to the test. So, I conducted an experiment and (spoiler alert) found evidence to support my hypothesis in the worst possible way.
+        After coming up with that hypothesis, I decided to do some <span className='blog-red' onClick={()=>setScience(science?false:true)}>research {scienceComment}</span> and put it to the test. So, I conducted an experiment and (spoiler alert) found evidence to support my hypothesis in the worst possible way.
       </p>
       <h2>The Back Story</h2>
       <p>
@@ -24,7 +38,7 @@ const RacialApplications = (props) => {
         <li>Had always wondered why job applications ask for a potential candidate’s race,</li>
       </ul>
       <p>
-        I came up with an experiment to find an answer this question:
+        I came up with an experiment to find an answer to this question:
       </p>
       <p>
         <span className='blog-bold'>

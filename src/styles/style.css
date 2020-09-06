@@ -804,6 +804,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: avenir;
 }
 
 #blog-content {
@@ -816,8 +817,54 @@ a:hover {
   font-family: avenir;
 }
 
+#blog-content h2 {
+  color: #de662d;
+}
+
+ul {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #424242;
+}
+
 .blog-bold {
   font-weight: bold;
   color: #005183;
+}
+
+.blog-yellow {
+  color: red;
+  position: relative;
+}
+
+.blog-yellow:hover {
+  cursor: pointer;
+}
+
+.extra-info {
+  width: 400px;
+  background: #424242;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  padding-right: 50px;
+  position: absolute;
+  bottom: 35px;
+  left: -150px;
+}
+
+.x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.x:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

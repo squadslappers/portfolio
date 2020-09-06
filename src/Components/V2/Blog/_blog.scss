@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: avenir;
 }
 #blog-content{
   margin-top: 30px;
@@ -12,10 +13,44 @@
   line-height: 1.5;
   font-family: avenir;
 }
-.blog-list{
+#blog-content h2{
+  color: $orange;
+}
+ul {
   line-height: 1.5;
+  font-size: 18px;
+  color: $darkgray;
 }
 .blog-bold{
   font-weight: bold;
   color: $cornflowerblue;
+}
+.blog-red{
+  color: red;
+  position: relative;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.extra-info{
+  width: 400px;
+  background: $darkgray;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  padding-right: 50px;
+  position: absolute;
+  bottom: 35px;
+  left: -150px;
+}
+.x{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  text-align: center;
+  &:hover{cursor: pointer;}
 }
