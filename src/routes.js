@@ -9,7 +9,7 @@ import RacialApplications from './Components/V2/Blog/RacialApplications';
 export default(
   <Switch>
     <Route exact path='/' component={SoftwareEngineer}/>
-    <Route path = '/blog/simplify-javascript' component = {SimplifyJS}/>
-    <Route path = '/blog/racial-applications' component = {RacialApplications}/>
+    <Route exact path='/blog/simplify-javascript' component = {SimplifyJS}/>
+    <Route exact path='/blog/racial-applications' component = {RacialApplications}/>
   </Switch>
 )

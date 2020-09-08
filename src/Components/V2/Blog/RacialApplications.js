@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {withRouter} from 'react-router-dom';
 import Header from '../Header/Header';
 import MiniHeader from '../MiniHeader/MiniHeader';
 import ExtraInfo from './ExtraInfo';
@@ -68,7 +69,7 @@ const RacialApplications = (props) => {
     : null;
 
   return (<div id='blog-div'>
-    <Header title='BLOG'/>
+    <Header title='BLOG' alt='squid-logo'/>
     <MiniHeader title='RACIAL APPLICATIONS'/>
     <div id='blog-content'>
     <TLDR tldr="I conducted an experiment and discovered that employers are more likely to respond to a white applicant over a Black or Hispanic/Latino one with similar experience. For that reason, I think it's time to remove the question asking for an applicant's race/ethnicity on job applications."/>
@@ -160,4 +161,4 @@ const RacialApplications = (props) => {
     <Footer/>
   </div>)
 }
-export default RacialApplications;
+export default withRouter(RacialApplications);

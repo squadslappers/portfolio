@@ -16,7 +16,7 @@ import SquidslippersOrange from '../Images/SquidslippersOrange.png'
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
-    <Header title='SOFTWARE ENGINEERING' alt='Squid-logo'/>
+    <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
 
     <div className='white-section'>
