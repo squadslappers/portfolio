@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Header from '../Header/Header';
 import MiniHeader from '../MiniHeader/MiniHeader';
 import ExtraInfo from './ExtraInfo';
+import TLDR from './TLDR';
 
 const RacialApplications = (props) => {
 
@@ -68,11 +69,12 @@ const RacialApplications = (props) => {
     <Header title='BLOG'/>
     <MiniHeader title='RACIAL APPLICATIONS'/>
     <div id='blog-content'>
+    <TLDR tldr="I conducted an experiment and discovered that employers are more likely to respond to a white applicant over a Black or Hispanic/Latino one with similar experience. For that reason, I think it's time to remove the question asking for an applicant's race/ethnicity on job applications."/>
       <h2>The Foreword</h2>
       <ul>
         <li>I conducted all of this research by myself and am working on formatting the data so you can see it.</li>
         <li>If the text is red, that means you can click on it to see more information. <span className='blog-red' onClick={()=>setExample(example?false:true)}>Like this! {exampleComment}</span></li>
-        <li>TL;DR: I discovered that employers are more likely to respond to a white applicant over a Black or Hispanic/Latino one, and I think it's time to remove the question asking for an applicant's race/ethnicity on job applications.</li>
+        <li>TL;DR: </li>
       </ul>
       <h2>The Hypothesis</h2>
       <p>
