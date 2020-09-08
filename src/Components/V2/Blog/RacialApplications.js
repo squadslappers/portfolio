@@ -3,6 +3,8 @@ import Header from '../Header/Header';
 import MiniHeader from '../MiniHeader/MiniHeader';
 import ExtraInfo from './ExtraInfo';
 import TLDR from './TLDR';
+import BlogFooter from './BlogFooter';
+import Footer from '../Footer/Footer';
 
 const RacialApplications = (props) => {
 
@@ -20,7 +22,7 @@ const RacialApplications = (props) => {
 
   const exampleComment = example
     ? <ExtraInfo
-      info="Any additional information will be shown in a popup like this one. I added the X in the corner for UX/UI purposes, but clicking anywhere on the page will close the window."/>
+      info="Any additional information will be shown in a popup like this one. I added the X in the corner for UX/UI purposes, but clicking anywhere on the page should close the window."/>
     : null;
   const dateComment = date
     ? <ExtraInfo
@@ -70,12 +72,9 @@ const RacialApplications = (props) => {
     <MiniHeader title='RACIAL APPLICATIONS'/>
     <div id='blog-content'>
     <TLDR tldr="I conducted an experiment and discovered that employers are more likely to respond to a white applicant over a Black or Hispanic/Latino one with similar experience. For that reason, I think it's time to remove the question asking for an applicant's race/ethnicity on job applications."/>
-      <h2>The Foreword</h2>
-      <ul>
-        <li>I conducted all of this research by myself and am working on formatting the data so you can see it.</li>
-        <li>If the text is red, that means you can click on it to see more information. <span className='blog-red' onClick={()=>setExample(example?false:true)}>Like this! {exampleComment}</span></li>
-        <li>TL;DR: </li>
-      </ul>
+      <p>
+        <span className='blog-bold'>Pro tip:</span> If the text is red, that means you can click on it to see more information. <span className='blog-red' onClick={()=>setExample(example?false:true)}>Like this! {exampleComment}</span>
+      </p>
       <h2>The Hypothesis</h2>
       <p>
         I have always wondered why job applications ask candidates for their race/ethnicity. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer.” In my opinion, <span className='blog-red' onClick={()=>setDate(date?false:true)}>if they truly didn’t care, they wouldn’t ask in the first place. {dateComment}</span> Following that logic, I figured that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
@@ -157,6 +156,8 @@ const RacialApplications = (props) => {
         Is it time to remove that question on job applications? I would argue that it is. If that information is needed for reporting purposes, maybe it can be asked to interviewees who have made it to the second or third rounds of the interview process to avoid what the data shows (Black and Hispanic/Latino applicants didn’t get as many responses, let alone positive ones—even when they had similar experience). What do you think?
       </p>
     </div>
+    <BlogFooter/>
+    <Footer/>
   </div>)
 }
 export default RacialApplications;

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 const Card = (props) => {
   const [showMore, toggleMore] = useState(false);
@@ -9,6 +10,9 @@ const Card = (props) => {
   const button2 = props.button2
     ? <a className={props.buttonColor + '-card-button'} href={props.href1} target='_blank' rel="noopener noreferrer">{props.button2}</a>
     : null;
+  const link = props.link && props.linkWords
+    ? <Link to={props.link} className={props.buttonColor+'-card-button'}>{props.linkWords}</Link>
+    : null
 
   return (<div className={props.background + '-card-div'} onClick={()=>toggleMore(showMore ? false:true)}>
     <div className='card-header'>
@@ -22,6 +26,7 @@ const Card = (props) => {
     <div className='card-buttons'>
       {button1}
       {button2}
+      {link}
     </div>
   </div>);
 }
