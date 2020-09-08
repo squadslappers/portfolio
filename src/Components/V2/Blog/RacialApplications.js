@@ -7,6 +7,9 @@ const RacialApplications = (props) => {
 
   const [date, setDate] = useState(false);
   const [science, setScience] = useState(false);
+  const [jobless, setJobless] = useState(false);
+  const [scientificMethod, setScientificMethod] = useState(false);
+  const [research, setResearch] = useState(false);
 
   const dateComment = date
     ? <ExtraInfo
@@ -14,7 +17,19 @@ const RacialApplications = (props) => {
     : null;
   const scienceComment = science
     ? <ExtraInfo
-      info='I am not a professional researcher, just a man who has been unemployed for far too long'/>
+      info='I am not a professional researcher, just a man who has been unemployed for far too long.'/>
+    : null;
+  const joblessComment = jobless
+    ? <ExtraInfo
+      info='Admittedly, I haven’t had much success so far. If you’re looking for a software engineer, let’s get in touch!'/>
+    : null;
+  const researchComment = research
+    ? <ExtraInfo
+      info='This is just a fancy word for “Googling a few questions and clicking on the top few links.”'/>
+    : null;
+  const scientificMethodComment = scientificMethod
+    ? <ExtraInfo
+      info='...My actual first step was Googling "what is the scientific method"'/>
     : null;
 
   return (<div id='blog-div'>
@@ -23,14 +38,14 @@ const RacialApplications = (props) => {
     <div id='blog-content'>
       <h2>The Hypothesis</h2>
       <p>
-        I have always wondered why job applications ask candidates for their race/ethnicity. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer.” In my opinion, <span className='blog-red' onClick={()=>setDate(date?false:true)}>if they truly didn’t care, they wouldn’t ask in the first place.</span> Following that logic, I figured that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
+        I have always wondered why job applications ask candidates for their race/ethnicity. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer.” In my opinion, <span className='blog-red' onClick={()=>setDate(date?false:true)}>if they truly didn’t care, they wouldn’t ask in the first place. {dateComment}</span> Following that logic, I figured that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
       </p>
       <p>
         After coming up with that hypothesis, I decided to do some <span className='blog-red' onClick={()=>setScience(science?false:true)}>research {scienceComment}</span> and put it to the test. So, I conducted an experiment and (spoiler alert) found evidence to support my hypothesis in the worst possible way.
       </p>
-      <h2>The Back Story</h2>
+      <h2>The Backstory</h2>
       <p>
-        This January, I graduated from Devmountain’s thirteen-week, full-time web development bootcamp. Since then, I have applied for hundreds of jobs across the United States (admittedly, I haven’t had any luck so far. If you’re looking for a software engineer, let’s get in touch). For the majority of 2020, applying for jobs has been my job. Needless to say, I have become well acquainted with the application process. As a man who:
+        This January, I graduated from Devmountain’s thirteen-week, full-time web development bootcamp. Since then, <span className='blog-red' onClick={()=>setJobless(jobless?false:true)}>I have applied for hundreds of jobs across the United States. {joblessComment}</span> For the majority of 2020, applying for jobs has been my job. Needless to say, I have become well acquainted with the application process. And as a man who:
       </p>
       <ul>
         <li>Was unemployed and had a lot of free time,</li>
@@ -47,7 +62,7 @@ const RacialApplications = (props) => {
       </p>
       <h2>The Research</h2>
       <p>
-        My first step (after Googling “what is the scientific method”)  was to do a bit of “research” (which is a fancy word for “Googling a few questions and clicking on the top few links”). It didn’t take long for me to find that my belief that a company asking for someone’s race contradicted their claim of being an equal opportunity employer was almost exactly wrong: Apparently, companies use that information for reporting purposes to ensure that candidates are, in fact, given an equal shot. Mystery solved!
+        <span className='blog-red' onClick={()=>setScientificMethod(scientificMethod?false:true)>My first step {scientificMethodComment}</span> was to do a bit of <span className='blog-red' onClick={()=>setResearch(research?false:true)}>research. {researchComment}</span> It didn’t take long for me to find that my belief that a company asking for someone’s race contradicted their claim of being an equal opportunity employer was almost exactly wrong: Apparently, companies use that information for reporting purposes to ensure that candidates are, in fact, given an equal shot. Mystery solved!
       </p>
       <p>
         Well, not entirely solved. What I was off to test was a different matter entirely. Sure, employers use that information for reporting purposes, but they still have access to it. Are they influenced by it? That’s what I was trying to find out.
