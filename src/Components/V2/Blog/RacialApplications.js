@@ -11,6 +11,8 @@ const RacialApplications = (props) => {
   const [scientificMethod, setScientificMethod] = useState(false);
   const [research, setResearch] = useState(false);
   const [name, setName] = useState(false);
+  const [resumeInfo, setResumeInfo] = useState(false);
+  const [data, setData] = useState(false);
 
   const dateComment = date
     ? <ExtraInfo
@@ -35,6 +37,14 @@ const RacialApplications = (props) => {
   const nameComment = name
     ? <ExtraInfo
       info='While researching, I found that employers had been accused of profiling people based on their names, so I chose the names Greg, Brad, and James to hopefully avoid that issue.'/>
+    : null;
+  const resumeInfoComment = resumeInfo
+    ? <ExtraInfo
+      info='For things like phone numbers and addresses, I found some friends who agreed to let me use theirs.'/>
+    : null;
+  const dataComment = data
+    ? <ExtraInfo
+      info='If people are interested, I will work on formatting the actual data in a visual way so people can see it.'/>
     : null;
 
   return (<div id='blog-div'>
@@ -77,7 +87,7 @@ const RacialApplications = (props) => {
         Here’s a rundown of the experiment I designed:
       </p>
       <p>
-        <span className='blog-bold'>First</span>, I invented three people: One white, one Black, and one Hispanic/Latino, all of whom were males. I gave them phone numbers, emails, names, and everything else they would need to fill out an application (for things like phone numbers and addresses, I found some friends who agreed to let me use theirs).
+        <span className='blog-bold'>First</span>, I invented three people: One white, one Black, and one Hispanic/Latino, all of whom were males. I gave them phone numbers, emails, <span className='blog-red' onClick={()=>setName(name?false:true)}>names {nameComment} </span>, and <span className='blog-red' onClick={()=>setResumeInfo(resumeInfo?false:true)}>everything else they would need {resumeInfoComment}</span> to fill out an application.
       </p>
       <p>
         <span className='blog-bold'>Second</span>, I made three nearly identical resume templates for the three candidates. It took some trial and error, but I eventually got them to a point where I would only need to adjust a few words and phrases to make the resume match the position.
@@ -93,14 +103,14 @@ const RacialApplications = (props) => {
       </p>
       <ul>
         <li>The candidates were as identical as they could possibly be without being identical. For example, they often worked in the same position, only at different companies and different times. They all graduated in the same major from similar universities, etc.</li>
-        <li>All I tracked was whether or not the employer replied, and if they did, whether it was a rejection or an offer to proceed to the next step (none of the three candidates ever accepted the offer).</li>
+        <li>All I tracked was whether or not the employer replied and whether whether the response was a rejection or an offer to proceed to the next step.</li>
       </ul>
       <p>
         This continued for six months. In those six months, the three candidates applied for a total of 210 jobs each in a variety of industries: Banking, construction, management, marketing, trucking, you name it. And I kept track of who responded to whom along the way.
       </p>
       <h2>The Results</h2>
       <p>
-        I had a friend of mine (a statistics major at the University of Utah) help me make sense of the data. If people are interested, I will work on formatting the actual data in a reasonable way so people can see it. For now, here are a few of the most noteworthy patterns I noticed:
+        I had a friend of mine (a statistics major at the University of Utah) help me make sense of the <span className='blog-red' onClick={()=>setData(data?false:true)}>data. {dataComment} </span> Here are a few of the most noteworthy patterns I noticed:
       </p>
       <ul>
         <li>The white candidate received the most responses (45%). The Black candidate was second (37%), and the Hispanic/Latino candidate was third (35%).</li>
@@ -116,7 +126,10 @@ const RacialApplications = (props) => {
       </ul>
       <h2>The Conclusion</h2>
       <p>
-        It appears that the evidence does support my hypothesis and that the answer to the question, <span className='blog-bold'>Does a person’s race influence their chances of getting a job?</span> appears to be <span className='blog-bold'>yes, it does.</span> Based on this data, it appears that my initial belief that I thought was disproven by Google was actually right all along: Asking for someone’s race on a job application often does, in fact, contradict an employer’s claim of being an equal opportunity employer.
+        It appears that the evidence does support my hypothesis and that the answer to the question, <span className='blog-bold'>Does a person’s race influence their chances of getting a job?</span> appears to be <span className='blog-bold'>yes, it does.</span> Based on this data, it appears that my initial belief that I thought was disproven by Google was actually right all along: Asking for someone’s race on a job application often does, in fact, seem to contradict an employer’s claim of being an equal opportunity employer.
+      </p>
+      <p>
+        It is also worth mentioning that I am definitely not the first person to conduct similar research
       </p>
       <p>
         Is it time to remove that question on job applications? I would argue that it is. If that information is needed for reporting purposes, maybe it can be asked to interviewees who have made it to the second or third rounds of the interview process to avoid what the data shows (Black and Hispanic/Latino applicants didn’t get as many responses, let alone positive ones—even when they had similar experience). What do you think?
