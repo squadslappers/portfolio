@@ -5,6 +5,7 @@ import ExtraInfo from './ExtraInfo';
 
 const RacialApplications = (props) => {
 
+  const [example, setExample] = useState(false);
   const [date, setDate] = useState(false);
   const [science, setScience] = useState(false);
   const [jobless, setJobless] = useState(false);
@@ -13,7 +14,13 @@ const RacialApplications = (props) => {
   const [name, setName] = useState(false);
   const [resumeInfo, setResumeInfo] = useState(false);
   const [data, setData] = useState(false);
+  const [hireMe, setHireMe] = useState(false);
+  const [otherResearch, setOtherResearch] = useState(false);
 
+  const exampleComment = example
+    ? <ExtraInfo
+      info="Any additional information will be shown in a popup like this one. I added the X in the corner for UX/UI purposes, but clicking anywhere on the page will close the window."/>
+    : null;
   const dateComment = date
     ? <ExtraInfo
       info="To illustrate this point: If I were going on a date and, before the date, said, 'How tall are you? Not that I care,' my date would likely think, 'If you really didn't care, you wouldn't be asking...'"/>
@@ -32,7 +39,7 @@ const RacialApplications = (props) => {
     : null;
   const scientificMethodComment = scientificMethod
     ? <ExtraInfo
-      info='...My actual first step was Googling "what is the scientific method"'/>
+      info='...My actual first step was Googling "what is the scientific method"...'/>
     : null;
   const nameComment = name
     ? <ExtraInfo
@@ -46,17 +53,33 @@ const RacialApplications = (props) => {
     ? <ExtraInfo
       info='If people are interested, I will work on formatting the actual data in a visual way so people can see it.'/>
     : null;
+  const hireMeComment = hireMe
+    ? <ExtraInfo
+      info='I am currently looking for a web development job. Take a look at my portfolio to see if my skills match your needs!'
+      link={true}/>
+    : null;
+  const otherResearchComment = otherResearch
+    ? <ExtraInfo
+      info='I am definitely not the first person to look into this issue. A quick Google search will help you find multiple articles talking about similar experiments that have found similar results.'
+      link={true}/>
+    : null;
 
   return (<div id='blog-div'>
     <Header title='BLOG'/>
-    <MiniHeader title='COOL BLOG TITLE HERE'/>
+    <MiniHeader title='RACIAL APPLICATIONS'/>
     <div id='blog-content'>
+      <h2>The Foreword</h2>
+      <ul>
+        <li>I conducted all of this research by myself and am working on formatting the data so you can see it.</li>
+        <li>If the text is red, that means you can click on it to see more information. <span className='blog-red' onClick={()=>setExample(example?false:true)}>Like this! {exampleComment}</span></li>
+        <li>TL;DR: I discovered that employers are more likely to respond to a white applicant over a Black or Hispanic/Latino one, and I think it's time to remove the question asking for an applicant's race/ethnicity on job applications.</li>
+      </ul>
       <h2>The Hypothesis</h2>
       <p>
         I have always wondered why job applications ask candidates for their race/ethnicity. It has always seemed contradictory that companies ask for that information while simultaneously claiming that they are an “equal opportunity employer.” In my opinion, <span className='blog-red' onClick={()=>setDate(date?false:true)}>if they truly didn’t care, they wouldn’t ask in the first place. {dateComment}</span> Following that logic, I figured that yes, employers ask for that information for a reason, and I bet that a person’s answer to that question actually influences a person’s chances of getting a job.
       </p>
       <p>
-        After coming up with that hypothesis, I decided to do some <span className='blog-red' onClick={()=>setScience(science?false:true)}>research {scienceComment}</span> and put it to the test. So, I conducted an experiment and (spoiler alert) found evidence to support my hypothesis in the worst possible way.
+        After coming up with that hypothesis, I decided to do some <span className='blog-red' onClick={()=>setScience(science?false:true)}>research {scienceComment}</span> and put it to the test. So, I conducted an experiment and (spoiler alert) found evidence to support my hypothesis.
       </p>
       <h2>The Backstory</h2>
       <p>
@@ -93,7 +116,7 @@ const RacialApplications = (props) => {
         <span className='blog-bold'>Second</span>, I made three nearly identical resume templates for the three candidates. It took some trial and error, but I eventually got them to a point where I would only need to adjust a few words and phrases to make the resume match the position.
       </p>
       <p>
-      <span className='blog-bold'>Third</span>, after I had met my personal goal of applying for seven jobs a day, I would look for more jobs, read the job description, edit my three candidates’ resumes to make them all fit the position in a nearly identical way, then apply.
+      <span className='blog-bold'>Third</span>, after I had met my personal goal of applying for <span className='blog-red' onClick={()=>setHireMe(hireMe?false:true)}>seven jobs a day {hireMeComment}</span>, I would look for more jobs, read the job description, edit my three candidates’ resumes to make them all fit the position in a nearly identical way, then apply.
       </p>
       <p>
       <span className='blog-bold'>Fourth</span>, for each job, I recorded which applicant got a response from the employer, and what the response was.
@@ -126,10 +149,7 @@ const RacialApplications = (props) => {
       </ul>
       <h2>The Conclusion</h2>
       <p>
-        It appears that the evidence does support my hypothesis and that the answer to the question, <span className='blog-bold'>Does a person’s race influence their chances of getting a job?</span> appears to be <span className='blog-bold'>yes, it does.</span> Based on this data, it appears that my initial belief that I thought was disproven by Google was actually right all along: Asking for someone’s race on a job application often does, in fact, seem to contradict an employer’s claim of being an equal opportunity employer.
-      </p>
-      <p>
-        It is also worth mentioning that I am definitely not the first person to conduct similar research
+        It appears that the evidence does support my hypothesis and that the answer to the question, <span className='blog-bold'>Does a person’s race influence their chances of getting a job?</span> appears to be <span className='blog-bold'>yes, it does.</span> <span className='blog-red' onClick={()=>setOtherResearch(otherResearch?false:true)}>Based on my data, {otherResearchComment}</span> it appears that my initial belief that I thought was disproven by Google was actually right all along: Asking for someone’s race on a job application often does, in fact, seem to contradict an employer’s claim of being an equal opportunity employer.
       </p>
       <p>
         Is it time to remove that question on job applications? I would argue that it is. If that information is needed for reporting purposes, maybe it can be asked to interviewees who have made it to the second or third rounds of the interview process to avoid what the data shows (Black and Hispanic/Latino applicants didn’t get as many responses, let alone positive ones—even when they had similar experience). What do you think?
