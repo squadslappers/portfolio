@@ -3,11 +3,14 @@
   flex-direction: column;
   align-items: center;
   font-family: avenir;
+  width: 100%;
+  max-width: 800px;
 }
 #blog-content{
   margin-top: 30px;
   // border: 2px solid red;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 #blog-content p{
   line-height: 1.5;

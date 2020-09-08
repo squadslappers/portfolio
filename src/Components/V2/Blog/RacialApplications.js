@@ -10,6 +10,7 @@ const RacialApplications = (props) => {
   const [jobless, setJobless] = useState(false);
   const [scientificMethod, setScientificMethod] = useState(false);
   const [research, setResearch] = useState(false);
+  const [name, setName] = useState(false);
 
   const dateComment = date
     ? <ExtraInfo
@@ -30,6 +31,10 @@ const RacialApplications = (props) => {
   const scientificMethodComment = scientificMethod
     ? <ExtraInfo
       info='...My actual first step was Googling "what is the scientific method"'/>
+    : null;
+  const nameComment = name
+    ? <ExtraInfo
+      info='While researching, I found that employers had been accused of profiling people based on their names, so I chose the names Greg, Brad, and James to hopefully avoid that issue.'/>
     : null;
 
   return (<div id='blog-div'>
@@ -62,7 +67,7 @@ const RacialApplications = (props) => {
       </p>
       <h2>The Research</h2>
       <p>
-        <span className='blog-red' onClick={()=>setScientificMethod(scientificMethod?false:true)>My first step {scientificMethodComment}</span> was to do a bit of <span className='blog-red' onClick={()=>setResearch(research?false:true)}>research. {researchComment}</span> It didn’t take long for me to find that my belief that a company asking for someone’s race contradicted their claim of being an equal opportunity employer was almost exactly wrong: Apparently, companies use that information for reporting purposes to ensure that candidates are, in fact, given an equal shot. Mystery solved!
+        <span className='blog-red' onClick={()=>setScientificMethod(scientificMethod?false:true)}>My first step {scientificMethodComment}</span> was to do a bit of <span className='blog-red' onClick={()=>setResearch(research?false:true)}>research. {researchComment}</span> It didn’t take long for me to find that my belief that a company asking for someone’s race contradicted their claim of being an equal opportunity employer was almost exactly wrong: Apparently, companies use that information for reporting purposes to ensure that candidates are, in fact, given an equal shot. Mystery solved!
       </p>
       <p>
         Well, not entirely solved. What I was off to test was a different matter entirely. Sure, employers use that information for reporting purposes, but they still have access to it. Are they influenced by it? That’s what I was trying to find out.
