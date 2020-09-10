@@ -183,6 +183,13 @@ const SoftwareEngineer = (props) => {
           description='Is it time to remove?.'
           link='/blog/racial-applications'
           linkWords='VIEW THE POST'/>
+        <Card background='white' buttonColor='gray'
+          icon={SquidslippersOrange}
+          title='3 Tips to Land Your Next Coding Job'
+          details='Job Search'
+          date='Sep 10, 2020'
+          link='/blog/3-tips-to-land-your-next-coding-job'
+          linkWords='VIEW THE POST'/>
       </div>
     </div>
 

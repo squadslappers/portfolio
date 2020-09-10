@@ -10,20 +10,20 @@ import Footer from '../../Footer/Footer';
 const BlogName = (props) => {
   return (<div id='blog-div'>
     <Header title='BLOG' alt='squid-logo'/>
-    <MiniHeader title='THREE TIPS TO LAND YOUR FIRST CODING JOB'/>
+    <MiniHeader title='3 TIPS TO LAND YOUR NEXT CODING JOB'/>
     <div id='blog-content'>
-      <TLDR tldr="1: SET YOUR GOALS. Decide where you want to work and do what it takes to get there. 2: FIT THE DESCRIPTION. Study job descriptions and use them as a guide for what you should be studying. 3: "/>
+      <TLDR tldr="If you (1) decide where you want to work and what you're going to need to do to get there, (2) study job descriptions to know what you should be studying, and (3) do whatever it takes to stand out from the other applicants, you'll find a lot more success in your job search."/>
       <p>This January, I graduated from Devmountain's thirteen-week, full-time web development program. Since then, I've spent a lot of time looking for my next job in the development world. Along the way, I've had a lot of great opportunities to receive advice from a lot of incredible people:</p>
       <ul>
         <li>A bootcamp grad who quickly climbed the ladder to become a senior software engineer,</li>
-        <li>A tech recruiter with over twenty years of experience working with companies like Google, Facebook, and Apple,</li>
+        <li>A tech recruiter with over twenty years' experience working with companies like Google, Facebook, and Apple,</li>
         <li>And the COO of Vivint Solar...</li>
       </ul>
       <p>
         ...are only a few of the amazing people who have mentored me so far. Though I haven't found a coding job yet, I have made a lot of progress toward that goal, and I owe a lot of that progress to the advice I've received.
       </p>
       <p>
-        In an effort to pay it forward, I'm going to share some of the tips that have helped me the most. If you're new to coding and looking to break into the development world, <span className='blog-bold'>here are five tips to help you land your first coding job.</span>
+        In an effort to pay it forward, I'm going to share a few of the suggestions that have helped me the most (this blog post will be the first of many where I will address the advice I've been given). If you're new to coding and looking to break into the development world, <span className='blog-bold'>here are three tips to help you land your next coding job.</span>
       </p>
       <h2>1: Set Your Goals</h2>
       <p>
@@ -37,10 +37,7 @@ const BlogName = (props) => {
         <li><span className='blog-bold'>Write down a list of steps you'll need to take to get there.</span> In order to reach your five-year goal, what milestones will you need to reach to get there? Be as specific as possible as you invent your own path to where you want to be.</li>
       </ul>
       <p>
-        When you start to focus on what you want to achieve, it's amazing how your job search changes. You go from staring at the floor, waiting for scraps, to gazing skyward, ready to blaze your own trail to reach your goals.
-      </p>
-      <p>
-        In addition to giving your job search much more direction, it does wonders for your morale. Try it out!
+        When you start to focus on what you want to achieve, it's amazing how your job search changes. You go from staring at the floor waiting for scraps to gazing skyward ready to blaze your own trail to reach your goals. In addition to giving your job search much more direction, it does wonders for your morale.
       </p>
       <h2>2: Fit the Description</h2>
       <p>
@@ -69,9 +66,9 @@ const BlogName = (props) => {
         <li><span className='blog-bold'>Inspire the recruiters.</span> When you land an interview, look into the company and make a note of all the ways they benefit people. Talk about how much you appreciate the good the company does and how excited you would be to contribute to the cause.</li>
         <li><span className='blog-bold'>Play to your strengths.</span> If you're reading this, this tip works (I'm a writer and use this blog to provide value to others and bring traffic to my portfolio). I guarantee you all have a seemingly unrelated skill that you can use to help you get hired.</li>
       </ul>
-      <h2>4: Learn As You Go</h2>
+      <h2>More Tips to Come</h2>
       <p>
-        
+        As I mentioned, these are only a few of the recommendations I have received from people who know a lot more than I do. All of the tips I've shared or will share are things that I have tried and benefitted from. <span className='blog-bold'>I encourage you to try them out,</span> as I'm confident they can help you, too. I have a whole list of them, so stay tuned for more things you can do to get hired into your next coding job.
       </p>
     </div>
     <BlogFooter/>

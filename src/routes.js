@@ -14,6 +14,6 @@ export default(
     <Route exact path='/blog/simplify-javascript' component = {SimplifyJS}/>
     <Route exact path='/blog/racial-applications' component = {RacialApplications}/>
     <Route exact path='/blog/how-to-suck-at-coding' component = {SuckAtCoding}/>
-    <Route exact path='/blog/five-tips-to-land-your-first-coding-job' component = {GetAJob}/>
+    <Route exact path='/blog/3-tips-to-land-your-next-coding-job' component = {GetAJob}/>
   </Switch>
 )
