@@ -10,7 +10,7 @@ import Footer from '../../Footer/Footer';
 const BlogName = (props) => {
   return (<div id='blog-div'>
     <Header title='BLOG' alt='squid-logo'/>
-    <MiniHeader title='FIVE TIPS TO LAND YOUR FIRST CODING JOB'/>
+    <MiniHeader title='THREE TIPS TO LAND YOUR FIRST CODING JOB'/>
     <div id='blog-content'>
       <TLDR tldr="1: SET YOUR GOALS. Decide where you want to work and do what it takes to get there. 2: FIT THE DESCRIPTION. Study job descriptions and use them as a guide for what you should be studying. 3: "/>
       <p>This January, I graduated from Devmountain's thirteen-week, full-time web development program. Since then, I've spent a lot of time looking for my next job in the development world. Along the way, I've had a lot of great opportunities to receive advice from a lot of incredible people:</p>
@@ -33,11 +33,45 @@ const BlogName = (props) => {
         When you're feeling that way, it's time to take a step back and re-evaluate your approach. <span className='blog-bold'>It's time to set some goals.</span> I've found this approach to be helfpul:
       </p>
       <ul>
-        <li><span className='blog-bold'>Write down where you want to work in five years.</span> Where do you want to work? What position do you want to hold? What languages and technologies do you want to work with? Which company do you want to work for?</li>
+        <li><span className='blog-bold'>Write down where you want to be in five years.</span> Where do you want to work? What position do you want to hold? What languages and technologies do you want to work with? Which company do you want to work for?</li>
         <li><span className='blog-bold'>Write down a list of steps you'll need to take to get there.</span> In order to reach your five-year goal, what milestones will you need to reach to get there? Be as specific as possible as you invent your own path to where you want to be.</li>
       </ul>
       <p>
-        When you start to focus on what you want to achieve, it's amazing how your job search changes. You go from staring at the floor and waiting for scraps to gazing skyward and
+        When you start to focus on what you want to achieve, it's amazing how your job search changes. You go from staring at the floor, waiting for scraps, to gazing skyward, ready to blaze your own trail to reach your goals.
+      </p>
+      <p>
+        In addition to giving your job search much more direction, it does wonders for your morale. Try it out!
+      </p>
+      <h2>2: Fit the Description</h2>
+      <p>
+        One of the most common concerns for bootcamp grads is a lack of direction. There is an overwhelming number of languages and technologies to be studied, and it can be difficult to know which ones you should spend your time on.
+      </p>
+      <p>
+        If you're struggling to know how you should be spending your time, try this trick: <span className='blog-bold'>Start studying job descriptions.</span>
+      </p>
+      <ul>
+        <li>Are there no React jobs? Start studying Angular.</li>
+        <li>Do a lot of job listings mention that experience with Python is preferred? Get on it.</li>
+        <li>Are companies including experience with UX/UI design in the requirements section? Take a course on it.</li>
+      </ul>
+      <p>
+        When you stop skimming job descriptions and start studying them, you'll realize that they are literally maps to success. They tell you exactly what you need to be studying in order to be the ideal candidate for the job.
+      </p>
+      <h2>3: Stand Out to Recruiters</h2>
+      <p>
+        <span className='blog-bold'>"Your biggest problem is that you're just not standing out to recruiters."</span> An experienced tech recruiter told me this after viewing my resume, portfolio, and LinkedIn profile. There weren't any problems with them, but there wasn't anything noteworthy about them, either. They were average. <span className='blog-bold'>And when you're applying with 300 other applicants, being average is the last thing you want.</span>
+      </p>
+      <p>
+        As daunting a task as it may seem, standing out to recruiters can be simple. It all boils down to one simple principle: <span className='blog-bold'>Do more than just apply.</span> If you've applied for a job, congratulations! You've officially done the absolute bare minimum, just like everyone else. You can do more! You have to do more! Here are a few ideas of "more" things you can do:
+      </p>
+      <ul>
+        <li><span className='blog-bold'>Connect on LinkedIn.</span> A good rule of thumb is to connect with at least four people from the company (I usually connect with two recruiters and two developers). Send them a message introducing yourself and expressing your interest in the role.</li>
+        <li><span className='blog-bold'>Inspire the recruiters.</span> When you land an interview, look into the company and make a note of all the ways they benefit people. Talk about how much you appreciate the good the company does and how excited you would be to contribute to the cause.</li>
+        <li><span className='blog-bold'>Play to your strengths.</span> If you're reading this, this tip works (I'm a writer and use this blog to provide value to others and bring traffic to my portfolio). I guarantee you all have a seemingly unrelated skill that you can use to help you get hired.</li>
+      </ul>
+      <h2>4: Learn As You Go</h2>
+      <p>
+        
       </p>
     </div>
     <BlogFooter/>
