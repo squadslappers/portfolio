@@ -72,7 +72,7 @@ a:hover {
 .card {
   width: 100%;
   max-width: 700px;
-  background: #f8f8f8;
+  background: #e4e4e4;
   text-align: left;
   margin-bottom: 15px;
   padding: 20px;
@@ -224,7 +224,7 @@ a:hover {
 }
 
 #lightgray {
-  background: #f8f8f8;
+  background: #e4e4e4;
 }
 
 .line {
@@ -369,7 +369,7 @@ a:hover {
 }
 
 .lightgray-section {
-  background: #f8f8f8;
+  background: #e4e4e4;
 }
 
 .orange-line {
@@ -382,7 +382,7 @@ a:hover {
 .gray-card {
   width: 100%;
   max-width: 700px;
-  background: #f8f8f8;
+  background: #e4e4e4;
   text-align: left;
   margin-bottom: 15px;
   padding: 20px;
@@ -470,7 +470,7 @@ a:hover {
   margin-top: 30px;
   padding: 15px;
   border-radius: 10px;
-  background: #f8f8f8;
+  background: #e4e4e4;
   color: #005183;
   width: 99%;
 }
@@ -530,7 +530,7 @@ a:hover {
   text-align: center;
   padding: 25px 15px;
   padding-bottom: 30px;
-  background: #f8f8f8;
+  background: #e4e4e4;
 }
 
 .grid {
@@ -555,6 +555,18 @@ a:hover {
   -ms-grid-columns: (75px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 75px);
   max-width: 600px;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.icon-grid__2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (120px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 120px);
   grid-gap: 20px;
   width: 100%;
 }
@@ -654,7 +666,6 @@ a:hover {
 }
 
 .skills__section {
-  background: white;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 10px;
@@ -668,6 +679,41 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.skills__section h3 {
+  margin-bottom: 15px;
+}
+
+.skill__box {
+  -webkit-box-shadow: 0px 0px 10px 0px #e4e4e4;
+          box-shadow: 0px 0px 10px 0px #e4e4e4;
+  border-radius: 8px;
+  height: 150px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill__icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  background-size: cover;
+  -webkit-filter: brightness(0) saturate(100%) invert(23%) sepia(42%) saturate(1686%) hue-rotate(179deg) brightness(98%) contrast(88%);
+          filter: brightness(0) saturate(100%) invert(23%) sepia(42%) saturate(1686%) hue-rotate(179deg) brightness(98%) contrast(88%);
 }
 
 .gray-card-div {
@@ -904,7 +950,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #f8f8f8;
+  background: #e4e4e4;
   border: 2px solid gray;
   border-radius: 8px;
   padding: 10px 20px;
