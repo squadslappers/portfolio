@@ -15,3 +15,7 @@
     font-size: 20px;
   }
 }
+.header-icon{
+  @include dim(30px, 30px);
+  background-size: contain;
+}

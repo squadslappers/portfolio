@@ -63,10 +63,7 @@ a{
   }
 }
 
-@import './card';
-@import './headfoot';
 @import './sections';
-@import './blog';
 @import './test-style';
 
 @import '../Components/V2/Header/header';
@@ -75,3 +72,4 @@ a{
 @import '../Components/V2/SoftwareEngineer/sections';
 @import '../Components/V2/Card/card';
 @import '../Components/V2/Blog/blog';
+@import '../Components/V2/Footer/footer';

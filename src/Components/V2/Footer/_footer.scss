@@ -1,0 +1,19 @@
+#footer-main{
+  @include column;
+  background: $cornflowerblue;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  h1{margin-bottom: 20px;}
+  h2{
+    color: white
+  }
+}
+
+.footer-icon-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px);
+  grid-gap: 20px;
+  width: 95vw;
+  justify-content: center;
+}

@@ -94,3 +94,36 @@ ul {
   font-weight: bold;
   margin-bottom: 15px;
 }
+#footer-blog{
+  @include column;
+  background: $cornflowerblue;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  h2{margin-bottom: 20px;color: white;}
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 0 auto;
+    color: $cornflowerblue;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 90%;
+    max-width: 800px;
+    height: 50px;
+  }
+}
+
+#blog-footer-buttons{
+  width: 100%;
+  margin: 0px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 15px;
+}
