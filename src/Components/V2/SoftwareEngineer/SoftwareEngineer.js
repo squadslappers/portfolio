@@ -19,6 +19,73 @@ const SoftwareEngineer = (props) => {
     <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
 
+    <div className='gray-section'>
+      <h2>SKILLS</h2>
+      <div className='skills'>
+        <div className='skills__section'>
+          <h3>FRONT END</h3>
+
+          <div className='icon-grid'>
+        <div className='icon-container'>
+          <div className='icon' id='axios'/>
+          <span>Axios</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='css'/>
+          <span>CSS</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='express'/>
+          <span>express</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='html'/>
+          <span>HTML</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='jsx'/>
+          <span>JSX</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='javascript'/>
+          <span>JavaScript</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='node'/>
+          <span>Node</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='postgresql'/>
+          <span>PostgreSQL</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='postman'/>
+          <span>Postman</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='react'/>
+          <span>React</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='redux'/>
+          <span>Redux</span>
+        </div>
+        <div className='icon-container'>
+          <div className='icon' id='sass'/>
+          <span>Sass</span>
+        </div>
+      </div>
+
+        </div>
+        <div className='skills__section'>
+          <h3>BACKEND</h3>
+        </div>
+        <div className='skills__section'>
+          <h3>UX/UI</h3>
+        </div>
+      </div>
+    </div>
+
     <div className='white-section'>
       <h2>EXPERIENCE</h2>
       <div className='grid'>
