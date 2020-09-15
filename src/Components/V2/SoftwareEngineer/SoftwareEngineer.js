@@ -4,15 +4,44 @@ import Header from '../Header/Header';
 import MiniHeader from '../MiniHeader/MiniHeader';
 import Card from '../Card/Card';
 import Footer from '../Footer/Footer';
+import Skill from './Skill';
 // import Form from './Form';
 
 import Devmtn from '../Images/Devmtn.png';
 import Udemy from '../Images/Udemy.png';
 import SlideKick from '../Images/SlideKick.png';
-// import JavaScript from '../Images/JavaScript.png';
-// import SamJake from '../Images/SamJake.png';
 import HQRTCards from '../Images/HQRTCards.png';
 import SquidslippersOrange from '../Images/SquidslippersOrange.png'
+import ReactIcon from './Images/React.png';
+import ReduxIcon from './Images/Redux.png';
+import SocketIcon from './Images/Socketio.png';
+import CSS from './Images/CSS.png';
+import JavaScript from './Images/JavaScript.png';
+import HTML from './Images/HTML.png';
+import TypeScript from './Images/TypeScript.png';
+import Sass from './Images/Sass.png';
+import Chartjs from './Images/Chartjs.png';
+import Axios from './Images/Axios.png';
+import Express from './Images/Express.png';
+import Node from './Images/Node.png';
+import Massive from './Images/Massive.png';
+import PostgreSQL from './Images/PostgreSQL.png';
+import JSON from './Images/JSON.png';
+import Redis from './Images/Redis.png';
+import Docker from './Images/Docker.png';
+import TablePlus from './Images/TablePlus.png';
+import Heroku from './Images/Heroku.png';
+import NodeMailer from './Images/NodeMailer.png';
+import Postman from './Images/Postman.png';
+import ScrumMaster from './Images/ScrumMaster.png';
+import AWSLambda from './Images/AWSLambda.png';
+import AWSS3 from './Images/AWSS3.png';
+import AWSAPI from './Images/AWSAPI.png';
+import Fetch from './Images/Fetch.png';
+import Git from './Images/Git.png';
+import GitHub from './Images/GitHub.png';
+import Agile from './Images/Agile.png';
+import AdobeCreativeCloud from './Images/AdobeCreativeCloud.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
@@ -25,116 +54,106 @@ const SoftwareEngineer = (props) => {
         <div className='skills__section'>
           <h3>FRONT END</h3>
           <div className='icon-grid__2'>
-            <div className='skill__box'>
-              <div className='skill__icon' id='javascript'/>
-              <span>JavaScript</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='typescript'/>
-              <span>TypeScript</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='react'/>
-              <span>React</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='redux'/>
-              <span>Redux</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='html'/>
-              <span>HTML</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='socket.io'/>
-              <span>Socket.io</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='css'/>
-              <span>CSS</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='sass'/>
-              <span>SASS</span>
-            </div>
-            {/* <div className='skill__box'>
-              <div className='skill__icon' id='d3'/>
-              <span>D3</span>
-            </div> */}
-            <div className='skill__box'>
-              <div className='skill__icon' id='chartjs'/>
-              <span>Chart.js</span>
-            </div>
+            <Skill
+              icon={JavaScript}
+              name='JavaScript'/>
+            <Skill
+              icon={TypeScript}
+              name='TypeScript'/>
+            <Skill
+              icon={ReactIcon}
+              name='React'/>
+            <Skill
+              icon={ReduxIcon}
+              name='Redux'/>
+            <Skill
+              icon={HTML}
+              name='HTML'/>
+            <Skill
+              icon={CSS}
+              name='CSS'/>
+            <Skill
+              icon={Sass}
+              name='Sass'/>
+            <Skill
+              icon={SocketIcon}
+              name='Socket.io'/>
+            <Skill
+              icon={Chartjs}
+              name='Chart.js'/>
           </div>
         </div>
         <div className='skills__section'>
           <h3>BACKEND</h3>
           <div className='icon-grid__2'>
-            <div className='skill__box'>
-              <div className='skill__icon' id='axios'/>
-              <span>axios</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='express'/>
-              <span>Express</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='node'/>
-              <span>Node</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='massive'/>
-              <span>Massive</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='postgresql'/>
-              <span>PostgreSQL</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='bcryptjs'/>
-              <span>Bcrypt.js</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='json'/>
-              <span>JSON</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='redis'/>
-              <span>Redis</span>
-            </div>
+            <Skill
+              icon={Axios}
+              name='Axios'/>
+            <Skill
+              icon={Fetch}
+              name='Fetch'/>
+            <Skill
+              icon={Express}
+              name='Express'/>
+            <Skill
+              icon={Node}
+              name='Node'/>
+            <Skill
+              icon={Massive}
+              name='Massive'/>
+            <Skill
+              icon={PostgreSQL}
+              name='PostgreSQL'/>
+            <Skill
+              icon={JSON}
+              name='JSON'/>
+            <Skill
+              icon={Redis}
+              name='Redis'/>
+            <Skill
+              icon={NodeMailer}
+              name='NodeMailer'/>
           </div>
         </div>
         <div className='skills__section'>
-          <h3>EXTERNAL TOOLS</h3>
+          <h3>OTHER</h3>
           <div className='icon-grid__2'>
-            <div className='skill__box'>
-              <div className='skill__icon' id='docker'/>
-              <span>Docker</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='tableplus'/>
-              <span>TablePlus</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='heroku'/>
-              <span>Heroku</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='postman'/>
-              <span>Postman</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='awslambda'/>
-              <span>AWS Lambda</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='awss3'/>
-              <span>awss3</span>
-            </div>
-            <div className='skill__box'>
-              <div className='skill__icon' id='awsapigateway'/>
-              <span>AWS API Gateway</span>
-            </div>
+          <Skill
+              icon={Docker}
+              name='Docker'/>
+            <Skill
+              icon={TablePlus}
+              name='TablePlus'/>
+            <Skill
+              icon={Heroku}
+              name='Heroku'/>
+            <Skill
+              icon={Postman}
+              name='Postman'/>
+            <Skill
+              icon={AWSLambda}
+              name='AWS Lambda'/>
+            <Skill
+              icon={AWSS3}
+              name='AWS S3'/>
+            <Skill
+              icon={AWSAPI}
+              name='AWS API Gateway'/>
+            <Skill
+              icon={Git}
+              name='Git'/>
+            <Skill
+              icon={GitHub}
+              name='GitHub'/>
+            <Skill
+              icon={ScrumMaster}
+              name='Scrum Master'/>
+            <Skill
+              icon={Agile}
+              name='Agile'/>
+            <Skill
+              icon={AdobeCreativeCloud}
+              name='Adobe Creative Cloud'/>
           </div>
         </div>
       </div>
@@ -158,17 +177,7 @@ const SoftwareEngineer = (props) => {
           details='HQRTCards'
           date='Aug 2020 — Present'
           button1='COMING SOON'/>
-        {/* <Card background='gray' buttonColor='gray'
-          icon={SamJake}
-          title='UX/UI Designer'
-          details='SJ Photography'
-          href1='https://www.samueljake.com/'
-          date='Jul 2020 — Present'
-          button1='SEE IT LIVE'
-          /> */}
-
       </div>
-      {/* <Form/> */}
     </div>
 
     <div className='white-section'>
