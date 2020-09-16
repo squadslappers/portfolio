@@ -9,22 +9,24 @@ const Form = (props) => {
   return (<div id='form'>
     <h3>LET'S GET IN TOUCH</h3>
     <span>...so we can talk more about the value I can add to your company.</span>
-    <div className='form-container'>
-      <span>Name</span>
-      <input/>
-    </div>
-    <div className='form-container'>
-      <span>Company</span>
-      <input/>
-    </div>
-    <div className='form-container'>
-      <span>Email</span>
-      <input/>
-    </div>
-    <div className='form-container'>
-      <span>Phone</span>
-      <input/>
-    </div>
+    <form autocomplete="off">
+      <div className='form-container'>
+        <span>Name</span>
+        <input/>
+      </div>
+      <div className='form-container'>
+        <span>Company</span>
+        <input/>
+      </div>
+      <div className='form-container'>
+        <span>Email</span>
+        <input/>
+      </div>
+      {/* <div className='form-container'>
+        <span>Phone</span>
+        <input/>
+      </div> */}
+    </form>
   </div>)
 }
 export default Form;

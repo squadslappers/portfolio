@@ -14,9 +14,9 @@ return(
     <a href='https://drive.google.com/file/d/1c_c7TfvaQmm9zpuuDO_AVzXwr2vlxSLQ/view?usp=sharing' target='_blank' rel="noopener noreferrer">
       <img alt='resume' src='https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Resume.PNG' height='50px' width='50px'/>
     </a>
-    <a href='https://www.twitter.com/squidslippers' target='_blank' rel="noopener noreferrer">
+    {/* <a href='https://www.twitter.com/squidslippers' target='_blank' rel="noopener noreferrer">
       <img alt='twitter' src='https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Twitter.PNG' height='50px' widht='50px'/>
-    </a>
+    </a> */}
     {/* <a id='instagram' href='http://www.instagram.com/' rel='noopener nonreferrer'>
       <img alt='instagram' src='https://squidslippers.s3-us-west-1.amazonaws.com/Connect_Instagram.png' height='50px' width='50px'/>
     </a> */}

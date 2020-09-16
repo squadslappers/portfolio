@@ -42,6 +42,7 @@ import Git from './Images/Git.png';
 import GitHub from './Images/GitHub.png';
 import Agile from './Images/Agile.png';
 import AdobeCreativeCloud from './Images/AdobeCreativeCloud.png';
+import Me from './Images/Me.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
@@ -49,7 +50,9 @@ const SoftwareEngineer = (props) => {
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
     <div className='white-section'>
       <h2>ABOUT</h2>
-      <div id='blog-content'>
+      <div className='top-grid'>
+        <img className='me' src={Me} alt='me'/>
+        <div className='me-div'>
         <p>
           I'm a software engineer with a background in <span className='blog-bold'>digital marketing</span>. After working as a graphic designer, social media manager, copywriter, content creator, SEO Specialist, and doing other freelance digital marketing work, I decided to add <span className='blog-bold'>web development</span> to my skillset.
         </p>
@@ -57,9 +60,10 @@ const SoftwareEngineer = (props) => {
           So, I took a few <span className='blog-bold'>computer science</span> courses at Utah Valley University, enrolled in a <span className='blog-bold'>software engineering</span> course at DevMountain, continued my studies taking various courses on Udemy, and became a software engineer.
         </p>
         <p>
-          <span className='blog-bold'>I am currently looking for employment</span>, so if you find that my background and experience meet your needs...
+          <span className='blog-bold'>I am currently looking for employment</span>, so if you find that my background and experience meet your needs, <span className='blog-bold'>let's get in touch!</span>
         </p>
-        <Form/>
+        </div>
+        {/* <Form/> */}
       </div>
 
     </div>

@@ -146,6 +146,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
+#form form {
+  margin-top: 15px;
+}
+
 .form-container {
   width: 100%;
   max-width: 700px;
@@ -164,7 +168,53 @@ a:hover {
 .form-container input {
   border: none;
   height: 35px;
+  margin-top: 5px;
   padding-left: 10px;
+}
+
+.me {
+  height: 280px;
+  width: 280px;
+  border-radius: 160px;
+  border: 10px solid #de662d;
+}
+
+.me-div {
+  max-width: 600px;
+  text-align: left;
+}
+
+.top-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 25px;
+}
+
+@media (max-width: 1000px) {
+  .top-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me {
+    margin-bottom: 15px;
+  }
+  .me-div {
+    text-align: center;
+  }
 }
 
 .white-section {
