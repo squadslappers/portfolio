@@ -43,6 +43,7 @@ import GitHub from './Images/GitHub.png';
 import Agile from './Images/Agile.png';
 import AdobeCreativeCloud from './Images/AdobeCreativeCloud.png';
 import Me from './Images/Me.png';
+import UXUI from './Images/UXUI.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
@@ -102,7 +103,7 @@ const SoftwareEngineer = (props) => {
               icon={Chartjs}
               name='Chart.js'/>
             <Skill
-
+              icon={UXUI}
               name='UX / UI'/>
           </div>
         </div>
