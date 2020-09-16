@@ -4,7 +4,7 @@ $orange: #de662d;
 
 $darkgray: #424242;
 $gray: #808080;
-$lightgray: #e4e4e4;
+$lightgray: #eee;
 $ghostwhite: #f9fafa;
 
 // 'Roboto'
@@ -67,6 +67,7 @@ a{
 @import '../Components/V2/MiniHeader/miniHeader';
 @import '../Components/V2/SoftwareEngineer/softwareEngineer';
 @import '../Components/V2/SoftwareEngineer/sections';
+@import '../Components/V2/SoftwareEngineer/skills';
 @import '../Components/V2/Card/card';
 @import '../Components/V2/Blog/blog';
 @import '../Components/V2/Footer/footer';

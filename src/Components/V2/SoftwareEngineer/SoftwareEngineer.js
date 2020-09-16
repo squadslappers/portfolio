@@ -5,7 +5,7 @@ import MiniHeader from '../MiniHeader/MiniHeader';
 import Card from '../Card/Card';
 import Footer from '../Footer/Footer';
 import Skill from './Skill';
-// import Form from './Form';
+import Form from './Form';
 
 import Devmtn from '../Images/Devmtn.png';
 import Udemy from '../Images/Udemy.png';
@@ -47,11 +47,23 @@ const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
-    <div className='gray-section'>
-      <h2>ABOUT</h2>
-      <p></p>
-    </div>
     <div className='white-section'>
+      <h2>ABOUT</h2>
+      <div id='blog-content'>
+        <p>
+          I'm a software engineer with a background in <span className='blog-bold'>digital marketing</span>. After working as a graphic designer, social media manager, copywriter, content creator, SEO Specialist, and doing other freelance digital marketing work, I decided to add <span className='blog-bold'>web development</span> to my skillset.
+        </p>
+        <p>
+          So, I took a few <span className='blog-bold'>computer science</span> courses at Utah Valley University, enrolled in a <span className='blog-bold'>software engineering</span> course at DevMountain, continued my studies taking various courses on Udemy, and became a software engineer.
+        </p>
+        <p>
+          <span className='blog-bold'>I am currently looking for employment</span>, so if you find that my background and experience meet your needs...
+        </p>
+        <Form/>
+      </div>
+
+    </div>
+    <div className='gray-section'>
       <h2>SKILLS</h2>
       <div className='skills'>
         <div className='skills__section'>
@@ -165,10 +177,10 @@ const SoftwareEngineer = (props) => {
       </div>
     </div>
 
-    <div className='gray-section'>
+    <div className='white-section'>
       <h2>EXPERIENCE</h2>
       <div className='grid'>
-        <Card background='white' buttonColor='gray'
+        <Card background='gray' buttonColor='white'
           icon={SlideKick}
           alt='SlideKick-logo'
           title='Full-Stack Software Engineer'
@@ -176,7 +188,7 @@ const SoftwareEngineer = (props) => {
           button1='SEE IT LIVE'
           href1='https://slidekick.us/#/'
           date='Jun 2020 — Present'/>
-        <Card background='white' buttonColor='gray'
+        <Card background='gray' buttonColor='white'
           icon={HQRTCards}
           alt='HQRT-Cards-logo'
           title='Web Developer'
@@ -186,10 +198,10 @@ const SoftwareEngineer = (props) => {
       </div>
     </div>
 
-    <div className='white-section'>
+    <div className='gray-section'>
       <h2>EDUCATION</h2>
       <div className='grid'>
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Devmtn}
           alt='Devmountain-logo'
           title='Full-Stack Web Development'
@@ -197,7 +209,7 @@ const SoftwareEngineer = (props) => {
           date='Complete'
           // button1='VIEW THE COURSE'
           href1='https://devmountain.com/web-bootcamp-immersive'/>
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='The Complete JavaScript Course'
@@ -205,7 +217,7 @@ const SoftwareEngineer = (props) => {
           date='Complete'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-javascript-course/'/>
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='React — The Complete Guide'
@@ -213,7 +225,7 @@ const SoftwareEngineer = (props) => {
           date='Complete'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'/>
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='React Native — The Practical Guide'
@@ -221,7 +233,7 @@ const SoftwareEngineer = (props) => {
           date='In Progress'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-native-the-practical-guide/'/>
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='Angular — The Complete Guide'
@@ -229,14 +241,14 @@ const SoftwareEngineer = (props) => {
           date='In Progress'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-guide-to-angular-2/'/>
-        {/* <Card background='gray' buttonColor='white'
+        {/* <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='Computer Science 101'
           details='Udemy'
           date='Apr 2020 — Apr 2020'
           button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/computer-science-101-master-the-theory-behind-programming/'/> */}
-        <Card background='gray' buttonColor='white'
+        <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='The Complete SQL Bootcamp'
@@ -244,7 +256,7 @@ const SoftwareEngineer = (props) => {
           date='In Progress'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-sql-bootcamp/'/>
-        {/* <Card background='gray' buttonColor='white'
+        {/* <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='The Complete iOS App Development Bootcamp'
           details='Udemy'
@@ -308,10 +320,10 @@ const SoftwareEngineer = (props) => {
       </div>
     </div> */}
 
-    <div className='gray-section'>
+    <div className='white-section'>
       <h2>RECENT BLOG POSTS</h2>
       <div className='grid'>
-        <Card background='white' buttonColor='gray'
+        <Card background='gray' buttonColor='white'
           icon={SquidslippersOrange}
           title='Racial Applications'
           details='Workplace Ethics'
@@ -319,7 +331,7 @@ const SoftwareEngineer = (props) => {
           description='Is it time to remove?.'
           link='/blog/racial-applications'
           linkWords='VIEW THE POST'/>
-        <Card background='white' buttonColor='gray'
+        <Card background='gray' buttonColor='white'
           icon={SquidslippersOrange}
           title='3 Tips to Land Your Next Coding Job'
           details='Job Search'
