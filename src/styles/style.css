@@ -473,7 +473,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: white;
+  background: #de662d;
+  color: white;
 }
 
 .white-card-button:hover {

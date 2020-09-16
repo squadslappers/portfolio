@@ -62,7 +62,8 @@
 }
 .white-card-button{
   @include card-button;
-  background: white;
+  background: $orange;
+  color: white;
 }
 .gray-card-button{
   @include card-button;
