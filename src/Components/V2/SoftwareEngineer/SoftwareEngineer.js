@@ -47,7 +47,10 @@ const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
-
+    <div className='gray-section'>
+      <h2>ABOUT</h2>
+      <p></p>
+    </div>
     <div className='white-section'>
       <h2>SKILLS</h2>
       <div className='skills'>
@@ -81,6 +84,9 @@ const SoftwareEngineer = (props) => {
             <Skill
               icon={Chartjs}
               name='Chart.js'/>
+            <Skill
+
+              name='UX / UI'/>
           </div>
         </div>
         <div className='skills__section'>
@@ -153,7 +159,7 @@ const SoftwareEngineer = (props) => {
               name='Agile'/>
             <Skill
               icon={AdobeCreativeCloud}
-              name='Adobe Creative Cloud'/>
+              name='Creative Cloud'/>
           </div>
         </div>
       </div>
@@ -189,7 +195,7 @@ const SoftwareEngineer = (props) => {
           title='Full-Stack Web Development'
           details='Devmountain'
           date='Complete'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://devmountain.com/web-bootcamp-immersive'/>
         <Card background='gray' buttonColor='white'
           icon={Udemy}
@@ -197,7 +203,7 @@ const SoftwareEngineer = (props) => {
           title='The Complete JavaScript Course'
           details='Udemy'
           date='Complete'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-javascript-course/'/>
         <Card background='gray' buttonColor='white'
           icon={Udemy}
@@ -205,7 +211,7 @@ const SoftwareEngineer = (props) => {
           title='React — The Complete Guide'
           details='Udemy'
           date='Complete'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'/>
         <Card background='gray' buttonColor='white'
           icon={Udemy}
@@ -213,7 +219,7 @@ const SoftwareEngineer = (props) => {
           title='React Native — The Practical Guide'
           details='Udemy'
           date='In Progress'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-native-the-practical-guide/'/>
         <Card background='gray' buttonColor='white'
           icon={Udemy}
@@ -221,7 +227,7 @@ const SoftwareEngineer = (props) => {
           title='Angular — The Complete Guide'
           details='Udemy'
           date='In Progress'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-guide-to-angular-2/'/>
         {/* <Card background='gray' buttonColor='white'
           icon={Udemy}
@@ -236,7 +242,7 @@ const SoftwareEngineer = (props) => {
           title='The Complete SQL Bootcamp'
           details='Udemy'
           date='In Progress'
-          button1='VIEW THE COURSE'
+          // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-sql-bootcamp/'/>
         {/* <Card background='gray' buttonColor='white'
           icon={Udemy}
