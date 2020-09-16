@@ -173,8 +173,8 @@ a:hover {
 }
 
 .me {
-  height: 280px;
-  width: 280px;
+  height: 260px;
+  width: 260px;
   border-radius: 160px;
   border: 10px solid #de662d;
 }
@@ -182,6 +182,7 @@ a:hover {
 .me-div {
   max-width: 600px;
   text-align: left;
+  font-family: 'avenir';
 }
 
 .top-grid {
@@ -193,6 +194,9 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0px 25px;
 }
 

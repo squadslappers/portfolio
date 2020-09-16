@@ -48,7 +48,7 @@ const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
-    <div className='white-section'>
+    <div className='white-section' id="about">
       <h2>ABOUT</h2>
       <div className='top-grid'>
         <img className='me' src={Me} alt='me'/>
@@ -68,6 +68,7 @@ const SoftwareEngineer = (props) => {
 
     </div>
     <div className='gray-section'>
+      <a id="skills"/>
       <h2>SKILLS</h2>
       <div className='skills'>
         <div className='skills__section'>

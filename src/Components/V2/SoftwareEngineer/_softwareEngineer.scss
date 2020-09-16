@@ -28,19 +28,21 @@
   }
 }
 .me{
-  @include dim(280px, 280px);
+  @include dim(260px, 260px);
   border-radius: 160px;
   border: 10px solid $orange;
 }
 .me-div{
   max-width: 600px;
   text-align: left;
+  font-family: 'avenir';
 }
 .top-grid{
   display: flex;
   width: 100%;
   max-width: 1000px;
   justify-content: space-between;
+  align-items: center;
   padding: 0px 25px;
 }
 @media (max-width: 1000px) {
