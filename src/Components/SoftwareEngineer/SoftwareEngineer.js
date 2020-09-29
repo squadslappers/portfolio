@@ -28,46 +28,41 @@ const SoftwareEngineer = (props) => {
           icon={Devmtn}
           alt='Devmountain-logo'
           title='Full-Stack Web Development'
-          details='Devmountain'
-          date='Complete'
+          date='Devmountain'
           // button1='VIEW THE COURSE'
           href1='https://devmountain.com/web-bootcamp-immersive'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='The Complete JavaScript Course'
-          details='Udemy'
-          date='Complete'
+          date='Udemy'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-javascript-course/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='React — The Complete Guide'
-          details='Udemy'
-          date='Complete'
+          date='Udemy'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-the-complete-guide-incl-redux/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='React Native — The Practical Guide'
-          details='Udemy'
-          date='In Progress'
+          date='Udemy'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/react-native-the-practical-guide/'/>
         <Card background='white' buttonColor='gray'
           icon={Udemy}
           alt='Udemy-logo'
           title='Angular — The Complete Guide'
-          details='Udemy'
-          date='In Progress'
+          date='Udemy'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-guide-to-angular-2/'/>
         {/* <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='Computer Science 101'
-          details='Udemy'
+          date='Udemy'
           date='Apr 2020 — Apr 2020'
           button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/computer-science-101-master-the-theory-behind-programming/'/> */}
@@ -75,14 +70,13 @@ const SoftwareEngineer = (props) => {
           icon={Udemy}
           alt='Udemy-logo'
           title='The Complete SQL Bootcamp'
-          details='Udemy'
-          date='In Progress'
+          date='Udemy'
           // button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/the-complete-sql-bootcamp/'/>
         {/* <Card background='white' buttonColor='gray'
           icon={Udemy}
           title='The Complete iOS App Development Bootcamp'
-          details='Udemy'
+          date='Udemy'
           date='Aug 2020 — Present'
           button1='VIEW THE COURSE'
           href1='https://www.udemy.com/course/ios11-app-development-bootcamp/'/> */}
