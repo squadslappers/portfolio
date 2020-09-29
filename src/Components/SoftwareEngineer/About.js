@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Me from '../../styles/images/Me.png';
+import Me2 from '../../styles/images/Me2.png';
 
 const About = (props) => {
   return (<div className='section black'>
-  <h2>ABOUT</h2>
   <div className='top-grid'>
-    <img className='me' src={Me} alt='me'/>
+    <img className='me' src={Me2} alt='me'/>
     <div className='me-div'>
       <p>
         ...with a background in <span className='about__bold'>digital marketing</span>. After working as a graphic designer, social media manager, copywriter, content creator, SEO Specialist, and doing other freelance digital marketing work, I decided to add <span className='about__bold'>web development</span> to my skillset.

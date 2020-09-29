@@ -1,74 +1,58 @@
 @mixin card-div{
   width: 100%;
-  color: $cornflowerblue;
   border-radius: 10px;
   padding: 15px;
 }
-.gray-card-div{
+.card-div{
   @include card-div;
-  background: #eee;
-  // box-shadow: 0px 0px 10px 0px $lightgray;
-}
-.white-card-div{
-  @include card-div;
-  background: white;
-  // box-shadow: 0px 0px 10px 0px $lightgray;
-}
-.card-header{
-  display: flex;
-}
-.card-icon{
-  @include dim(45px, 45px);
-  border-radius: 30px;
-  margin-right: 15px;
+  background: rgba(255,255,255,0.85);
+  // background: white;
+  h3{
+    color: $cornflowerblue;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  span {color: $darkgray;}
 }
 .card-main-info{
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  p{
-    margin: 5px 0px;
-    font-size: 16px;
-    color: $gray;
-  }
-  span{
-    font-size: 16px;
-  }
+  align-items: center;
+  width: 100%;
+}
+.card__image{
+  margin-top: 16px;
+  height: 150px;
+  width: 100%;
+  background: $darkgray;
+  border-radius: 12px;
 }
 .card-buttons{
-  // margin-top: 25px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-@mixin card-button{
-  width: 100%;
+.card-button{
+  margin: 0 auto; margin-top: 20px;
   height: 30px;
-  border-radius: 20px;
-  margin-top: 25px;
-  color: $cornflowerblue;
+  background: $darkgray;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  // color: black;
   font-weight: bold;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  line-height: 28px;
   &:hover {
     cursor: pointer;
-    border: 2px solid $cornflowerblue;
+    background: black;
   }
   a{
     color: $cornflowerblue;
   }
 }
-.white-card-button{
-  @include card-button;
-  background: $orange;
-  color: white;
-}
-.gray-card-button{
-  @include card-button;
-  background: #eee;
-}
+
 
 // @media(max-width: 500px) {
 //   h3{

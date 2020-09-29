@@ -3,6 +3,7 @@
   text-align: center;
   padding: 25px 15px;
   padding-bottom: 30px;
+  h2{color: white;}
 }
 
 .section{
@@ -17,6 +18,18 @@
   }
 }
 
+.black-gradient {
+  background-image: linear-gradient($cornflowerblue, black);
+}
+
+.blue-gradient {
+  background-image: linear-gradient(black, $cornflowerblue);
+}
+
+.blue {
+  background: $cornflowerblue;
+}
+
 .gray-section{
   @include section;
   // background: #bfdaec;
@@ -28,7 +41,7 @@
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(425px, 425px));
+  grid-template-columns: repeat(auto-fit, minmax(425px, 475px));
   grid-gap: 25px;
   max-width: 1700px;
 }
