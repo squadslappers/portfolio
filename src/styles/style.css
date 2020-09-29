@@ -51,6 +51,60 @@ a:hover {
   cursor: pointer;
 }
 
+.top-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 25px;
+}
+
+.me {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px solid #005183;
+}
+
+.me-div {
+  max-width: 600px;
+  text-align: left;
+  font-family: 'avenir';
+}
+
+@media (max-width: 1000px) {
+  .top-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me {
+    margin-bottom: 15px;
+  }
+  .me-div {
+    text-align: center;
+  }
+}
+
+.about__bold {
+  color: #009eff;
+  font-weight: bold;
+}
+
 #header2 {
   padding: 10px 15px;
   z-index: 2;
@@ -82,7 +136,7 @@ a:hover {
   background-size: contain;
 }
 
-#mini-header2 {
+.mini-header {
   height: 450px;
   width: 100vw;
   display: -webkit-box;
@@ -100,12 +154,13 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 60px;
-  background: #005183;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#005183), to(black));
+  background-image: linear-gradient(#005183, black);
   position: relative;
   overflow: hidden;
 }
 
-#mini-header2 h1 {
+.mini-header h1 {
   font-family: 'Montserrat';
   color: white;
 }
@@ -114,22 +169,6 @@ a:hover {
   #mini-header2 h1 {
     font-size: 20px;
     width: 200px;
-  }
-}
-
-#mini-header-pic {
-  height: 900px;
-  position: absolute;
-  left: 50px;
-  opacity: 0.4;
-  z-index: 3;
-}
-
-@media (max-width: 1250px) {
-  #mini-header-pic {
-    height: 700px;
-    left: 0px;
-    opacity: 0.3;
   }
 }
 
@@ -172,56 +211,7 @@ a:hover {
   padding-left: 10px;
 }
 
-.me {
-  height: 260px;
-  width: 260px;
-  border-radius: 160px;
-  border: 10px solid #de662d;
-}
-
-.me-div {
-  max-width: 600px;
-  text-align: left;
-  font-family: 'avenir';
-}
-
-.top-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 1000px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 25px;
-}
-
-@media (max-width: 1000px) {
-  .top-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .me {
-    margin-bottom: 15px;
-  }
-  .me-div {
-    text-align: center;
-  }
-}
-
-.white-section {
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,6 +225,15 @@ a:hover {
   text-align: center;
   padding: 25px 15px;
   padding-bottom: 30px;
+}
+
+.black {
+  background: black;
+}
+
+.black p {
+  color: white;
+  font-size: 1.3rem;
 }
 
 .gray-section {

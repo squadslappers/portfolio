@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {withRouter} from 'react-router-dom';
-import Header from '../../Header/Header';
-import MiniHeader from '../../MiniHeader/MiniHeader';
+import Header from '../../Header';
+import MiniHeader from '../../MiniHeader';
 import ExtraInfo from '../ExtraInfo';
 import TLDR from '../TLDR';
 import BlogFooter from '../BlogFooter';
-import Footer from '../../Footer/Footer';
+import Footer from '../../Footer';
 
 const RacialApplications = (props) => {
 

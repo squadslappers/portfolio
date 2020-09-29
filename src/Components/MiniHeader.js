@@ -3,10 +3,8 @@ import React from 'react';
 // const MiniHeaderPic = require('./MiniHeaderPic.png');
 
 const MiniHeader = (props) => {
-  return (<div id='main-div'>
-    <div id='mini-header2'>
-      <h1>{props.title}</h1>
-    </div>
+  return (<div className='mini-header'>
+    <h1>{props.title}</h1>
   </div>);
 }
 export default MiniHeader;

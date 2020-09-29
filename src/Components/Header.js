@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Squidslippers from '../Images/Squidslippers.png';
+import Squidslippers from '../styles/images/Squidslippers.png';
 
 const Header = (props) => {
     return(<div id='header2'>

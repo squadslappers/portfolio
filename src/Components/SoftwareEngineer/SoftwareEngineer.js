@@ -1,75 +1,58 @@
 import React from 'react';
 
-import Header from '../Header/Header';
-import MiniHeader from '../MiniHeader/MiniHeader';
-import Card from '../Card/Card';
-import Footer from '../Footer/Footer';
+import Header from '../Header';
+import MiniHeader from '../MiniHeader';
+import Card from '../Card';
+import Footer from '../Footer';
 import Skill from './Skill';
-import Form from './Form';
-
-import Devmtn from '../Images/Devmtn.png';
-import Udemy from '../Images/Udemy.png';
-import SlideKick from '../Images/SlideKick.png';
-import HQRTCards from '../Images/HQRTCards.png';
-import SquidslippersOrange from '../Images/SquidslippersOrange.png'
-import ReactIcon from './Images/React.png';
-import ReduxIcon from './Images/Redux.png';
-import SocketIcon from './Images/Socketio.png';
-import CSS from './Images/CSS.png';
-import JavaScript from './Images/JavaScript.png';
-import HTML from './Images/HTML.png';
-import TypeScript from './Images/TypeScript.png';
-import Sass from './Images/Sass.png';
-import Chartjs from './Images/Chartjs.png';
-import Axios from './Images/Axios.png';
-import Express from './Images/Express.png';
-import Node from './Images/Node.png';
-import Massive from './Images/Massive.png';
-import PostgreSQL from './Images/PostgreSQL.png';
-import JSON from './Images/JSON.png';
-import Redis from './Images/Redis.png';
-import Docker from './Images/Docker.png';
-import TablePlus from './Images/TablePlus.png';
-import Heroku from './Images/Heroku.png';
-import NodeMailer from './Images/NodeMailer.png';
-import Postman from './Images/Postman.png';
-import ScrumMaster from './Images/ScrumMaster.png';
-import AWSLambda from './Images/AWSLambda.png';
-import AWSS3 from './Images/AWSS3.png';
-import AWSAPI from './Images/AWSAPI.png';
-import Fetch from './Images/Fetch.png';
-import Git from './Images/Git.png';
-import GitHub from './Images/GitHub.png';
-import Agile from './Images/Agile.png';
-import AdobeCreativeCloud from './Images/AdobeCreativeCloud.png';
-import Me from './Images/Me.png';
-import UXUI from './Images/UXUI.png';
+import About from './About';
+// Education
+import Devmtn from '../../styles/images/education/Devmtn.png';
+import Udemy from '../../styles/images/education/Udemy.png';
+// Experience
+import HQRTCards from '../../styles/images/experience/HQRTCards.png';
+import SlideKick from '../../styles/images/experience/SlideKick.png';
+// Skills
+import AdobeCreativeCloud from '../../styles/images/skills/AdobeCreativeCloud.png';
+import Agile from '../../styles/images/skills/Agile.png';
+import AWSLambda from '../../styles/images/skills/AWSLambda.png';
+import AWSS3 from '../../styles/images/skills/AWSS3.png';
+import AWSAPI from '../../styles/images/skills/AWSAPI.png';
+import Axios from '../../styles/images/skills/Axios.png';
+import Chartjs from '../../styles/images/skills/Chartjs.png';
+import CSS from '../../styles/images/skills/CSS.png';
+import Docker from '../../styles/images/skills/Docker.png';
+import Express from '../../styles/images/skills/Express.png';
+import Fetch from '../../styles/images/skills/Fetch.png';
+import Git from '../../styles/images/skills/Git.png';
+import GitHub from '../../styles/images/skills/GitHub.png';
+import Heroku from '../../styles/images/skills/Heroku.png';
+import HTML from '../../styles/images/skills/HTML.png';
+import JavaScript from '../../styles/images/skills/JavaScript.png';
+import JSON from '../../styles/images/skills/JSON.png';
+import Massive from '../../styles/images/skills/Massive.png';
+import Node from '../../styles/images/skills/Node.png';
+import NodeMailer from '../../styles/images/skills/NodeMailer.png';
+import PostgreSQL from '../../styles/images/skills/PostgreSQL.png';
+import Postman from '../../styles/images/skills/Postman.png';
+import ReactIcon from '../../styles/images/skills/React.png';
+import Redis from '../../styles/images/skills/Redis.png';
+import ReduxIcon from '../../styles/images/skills/Redux.png';
+import Sass from '../../styles/images/skills/Sass.png';
+import ScrumMaster from '../../styles/images/skills/ScrumMaster.png';
+import SocketIcon from '../../styles/images/skills/Socketio.png';
+import SquidslippersOrange from '../../styles/images/SquidslippersOrange.png'
+import TablePlus from '../../styles/images/skills/TablePlus.png';
+import TypeScript from '../../styles/images/skills/TypeScript.png';
+import UXUI from '../../styles/images/skills/UXUI.png';
 
 const SoftwareEngineer = (props) => {
   return (<div id='main-div'>
     <Header title='SOFTWARE ENGINEERING' alt='squid-logo'/>
     <MiniHeader title="HI, I'M JAKE AND I'M A SOFTWARE ENGINEER"/>
-    <div className='white-section' id="about">
-      <h2>ABOUT</h2>
-      <div className='top-grid'>
-        <img className='me' src={Me} alt='me'/>
-        <div className='me-div'>
-        <p>
-          I'm a software engineer with a background in <span className='blog-bold'>digital marketing</span>. After working as a graphic designer, social media manager, copywriter, content creator, SEO Specialist, and doing other freelance digital marketing work, I decided to add <span className='blog-bold'>web development</span> to my skillset.
-        </p>
-        <p>
-          So, I took a few <span className='blog-bold'>computer science</span> courses at Utah Valley University, enrolled in a <span className='blog-bold'>software engineering</span> course at DevMountain, continued my studies taking various courses on Udemy, and became a software engineer.
-        </p>
-        <p>
-          <span className='blog-bold'>I am currently looking for employment</span>, so if you find that my background and experience meet your needs, <span className='blog-bold'>let's get in touch!</span>
-        </p>
-        </div>
-        {/* <Form/> */}
-      </div>
-
-    </div>
+    <About/>
     <div className='gray-section'>
-      <a id="skills"/>
+      {/* <a id="skills" href='#'/> */}
       <h2>SKILLS</h2>
       <div className='skills'>
         <div className='skills__section'>

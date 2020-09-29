@@ -1,4 +1,4 @@
-#mini-header2{
+.mini-header{
   @include dim(450px, 100vw);
   @include column;
   h1{
@@ -8,7 +8,7 @@
   text-align: center;
   justify-content: center;
   padding: 0px 60px;
-  background: $cornflowerblue;
+  background-image: linear-gradient($cornflowerblue, black);
   position: relative;
   overflow: hidden;
 }
@@ -19,20 +19,5 @@
       font-size: 20px;
       width: 200px;
     }
-  }
-}
-
-#mini-header-pic{
-  height: 900px;
-  position: absolute;
-  left: 50px;
-  opacity: 0.4;
-  z-index: 3;
-}
-@media(max-width: 1250px){
-  #mini-header-pic{
-    height: 700px;
-    left: 0px;
-    opacity: 0.3;
   }
 }

@@ -5,8 +5,16 @@
   padding-bottom: 30px;
 }
 
-.white-section{
+.section{
   @include section;
+}
+
+.black {
+  background: black;
+  p{
+    color: white;
+    font-size: 1.3rem;
+  }
 }
 
 .gray-section{
