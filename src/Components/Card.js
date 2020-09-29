@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
+
 const Card = (props) => {
   const [showMore, toggleMore] = useState(false);
 
@@ -19,7 +22,14 @@ const Card = (props) => {
       <h3>{props.title}</h3>
       <span>{props.details ? props.details + ' •' : null}  {props.date}</span>
     </div>
-    { props.image ? <div className='card__image'/> : null }
+    {/* { props.image ? <div className='card__image'/> : null } */}
+    {props.image
+    ? <AliceCarousel>
+      <img className='card__image' src={props.image} alt={props.alt}/>
+      <img className='card__image' src={props.image2} alt={props.alt}/>
+      <img className='card__image' src={props.image3} alt={props.alt}/>
+    </AliceCarousel>
+    : null}
     <div className='card-buttons'>
       {button1}
       {button2}

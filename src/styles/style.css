@@ -455,6 +455,7 @@ a:hover {
 
 .card-div span {
   color: #424242;
+  margin-bottom: 16px;
 }
 
 .card-main-info {
@@ -472,12 +473,19 @@ a:hover {
   width: 100%;
 }
 
+.alice-carousel__dots {
+  display: none;
+}
+
+.alice-carousel__next-btn {
+  text-align: left;
+}
+
 .card__image {
-  margin-top: 16px;
-  height: 150px;
   width: 100%;
   background: #424242;
   border-radius: 12px;
+  border: 4px solid #424242;
 }
 
 .card-buttons {
@@ -492,7 +500,6 @@ a:hover {
 
 .card-button {
   margin: 0 auto;
-  margin-top: 20px;
   height: 30px;
   background: #005183;
   width: 100%;

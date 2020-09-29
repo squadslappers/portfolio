@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Me from '../../styles/images/Me.png';
 import Me2 from '../../styles/images/Me2.png';
 
 const About = (props) => {
