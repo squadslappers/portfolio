@@ -20,7 +20,7 @@ const ListItem = props => {
 
 return <div className='list-item'>
   <div className='list-item_image_background'>
-    {/* <img src={props.src} alt={props.alt}/> */}
+    <img className='list-item_image' src={props.src} alt={props.alt}/>
   </div>
 
   <span>{props.title}</span>

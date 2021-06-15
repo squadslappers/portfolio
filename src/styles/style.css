@@ -762,11 +762,10 @@ ul {
 
 .example {
   width: 1000px;
-  padding: 24px;
-  -webkit-box-shadow: 0px 2px 4px 1px #dbdbdb;
-          box-shadow: 0px 2px 4px 1px #dbdbdb;
+  padding: 24px 16px;
   border-radius: 12px;
   margin-top: 48px;
+  background: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -785,12 +784,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .example_header {
+  margin: 0 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,7 +801,7 @@ ul {
   padding: 24px;
   width: 100%;
   margin: 0 8px;
-  background: #f1f1f1;
+  background: white;
 }
 
 .example_info h3 {
@@ -839,6 +836,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   line-height: 45px;
+}
+
+.list-item_image {
+  max-height: 30px;
+  max-width: 30px;
 }
 
 .list-item_image_background {

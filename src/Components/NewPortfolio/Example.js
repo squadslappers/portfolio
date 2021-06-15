@@ -26,7 +26,7 @@ return <div className='example'>
     <div className='example_placeholder'/>
     <h2 className='example_title'>{props.title.toUpperCase()}</h2>
 
-    <a className='example_link'>SEE IT LIVE</a>
+    <a className='example_link' href={props.href} target='_blank' rel="noopener noreferrer">SEE IT LIVE</a>
   </div>
 
   <div className='example_container'>

@@ -1,11 +1,11 @@
 .example {
 // box
   width: 1000px;
-  padding: 24px;
-  box-shadow: 0px 2px 4px 1px #dbdbdb;
+  padding: 24px 16px;
   border-radius: 12px;
   margin-top: 48px;
-// content
+  // content
+  background: #f1f1f1;
 
 // display
   display: flex;
@@ -23,14 +23,13 @@
   
 // display
   display: flex;
-  justify-content: center;
 // position
   
 }
 
 .example_header {
 // box
-  
+  margin: 0 8px;
 // content
   
 // display
@@ -42,13 +41,12 @@
 
 .example_info {
 // box
-  // box-shadow: 0px 0px 4px 1px #dbdbdb;
   border-radius: 12px;
   padding: 24px;
   width: 100%;
   margin: 0 8px;
 // content
-  background: #f1f1f1;
+  background: white;
 // display
   
 // position
