@@ -1,29 +1,15 @@
-import React, {createContext} from 'react';
+import React from 'react';
 import './styles/style.css';
 import {withRouter} from 'react-router-dom';
 import routes from './routes';
 import ScrollToTop from './Components/ScrollToTop';
-
-const themes = {
-  light: {
-    foreground: '#000',
-    background: '#eee'
-  },
-  dark: {
-    foreground: '#fff',
-    background: '#222'
-  }
-}
-
-export const themeContext = createContext(themes.dark);
+import Header from './Components/NewPortfolio/Header';
 
 function App() {
 return (
   <div className="App">
+  <Header/>
   <ScrollToTop/>
-      {/* <themeContext.Provider value={themes.dark}>
-        <button style={{background: themes.background, color: themes.foreground}}>hi</button>
-      </themeContext.Provider> */}
         {routes}
     </div>
 );

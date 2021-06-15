@@ -8,6 +8,12 @@ $gray: #808080;
 $lightgray: #eee;
 $ghostwhite: #f9fafa;
 
+$pink: #dc64da;
+$gray: #708090;
+$blue: #0a458d;
+$blue-gradient: linear-gradient(#0066da,#082444);
+
+$yellow: #979700;
 // 'Roboto'
 // 'Lato'
 // 'Montserrat'
@@ -29,9 +35,11 @@ $ghostwhite: #f9fafa;
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 p {
-  margin-top: 15px;
+  // margin-top: 15px;
   font-size: 18px;
   color: $darkgray;
 }
@@ -73,3 +81,10 @@ a{
 @import './card';
 @import './blog';
 @import './footer';
+
+@import './NewPortfolio/category';
+@import './NewPortfolio/example';
+@import './NewPortfolio/global';
+@import './NewPortfolio/header';
+@import './NewPortfolio/home';
+@import './NewPortfolio/software';

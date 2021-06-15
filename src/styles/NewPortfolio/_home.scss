@@ -1,0 +1,29 @@
+.home {
+// box
+  width: 100vw;
+  height: 100vh;
+// content
+
+// display
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+// position
+  
+}
+
+.home_navigation {
+// box
+  margin-top: 100px;
+// content
+  
+// display
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 275px);
+  grid-gap: 15px;
+  justify-content: center;
+// position
+  
+}

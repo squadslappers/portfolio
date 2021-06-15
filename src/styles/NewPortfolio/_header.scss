@@ -1,0 +1,19 @@
+.header {
+// box
+  width: 100vw;
+  padding: 8px 12px;
+// content
+  background: $blue-gradient;
+}
+
+.header_logo_placeholder {
+// box
+  @include dim(30px, 30px);
+  border-radius: 100%;
+// content
+  background: white;
+// display
+  
+// position
+  
+}
