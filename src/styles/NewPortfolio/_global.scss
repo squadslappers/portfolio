@@ -5,7 +5,36 @@
   
 // display
   display: flex;
-  line-height: 45px;
+  flex-flow: column;
+  // line-height: 45px;
+// position
+}
+
+.list-item_caret {
+// box
+  height: 8px;
+// content
+  // opacity: 0.5;
+// display
+
+// position
+transition: transform .2s;
+}
+
+.active_caret {
+  transform: rotate(-90deg);
+}
+
+.list-item_details {
+// box
+  margin-left: 60px;
+  padding: 8px;
+  background: #f1f1f1;
+  border-radius: 8px;
+// content
+  text-align: left;
+// display
+  
 // position
   
 }
@@ -35,6 +64,34 @@
   align-items: center;
 }
 
+.list-item_main {
+// box
+  
+// content
+  
+// display
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+// position
+  &:hover {
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  transition: margin-left .2s;
+}
+
+.list-item_main_info {
+// box
+
+// content
+  
+// display
+  display: flex;
+  align-items: center;
+// position
+}
+
 .square {
 // box
   height: 275px;
@@ -44,17 +101,38 @@
   padding: 24px;
 // content
   font-size: 20px;
+  overflow: hidden;
 // display
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.square_active {
 // pseudo
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
   }
   transition: transform .2s;
+}
+
+.square_coming_soon {
+// box
+  width: 320px;
+// content
+  
+// display
+
+// position
+  position: absolute;
+  transform: rotate(-13deg);
+}
+
+.square_inactive {
+  cursor: initial;
 }
 
 .square_image {

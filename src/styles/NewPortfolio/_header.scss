@@ -4,6 +4,14 @@
   padding: 8px 12px;
 // content
   background: $blue-gradient;
+// display
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+// box
+  @include dim(30px, 30px);
 }
 
 .header_logo_placeholder {

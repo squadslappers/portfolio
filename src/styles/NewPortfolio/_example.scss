@@ -1,9 +1,9 @@
 .example {
 // box
-  width: 1000px;
+  max-width: 1000px;
   padding: 24px 16px;
   border-radius: 12px;
-  margin-top: 48px;
+  margin: 24px 16px;
   // content
   background: #f1f1f1;
 
@@ -19,12 +19,13 @@
 .example_container {
 // box
   width: 100%;
+  margin-top: 16px;
 // content
   
 // display
   display: flex;
 // position
-  
+
 }
 
 .example_header {
@@ -43,7 +44,7 @@
 // box
   border-radius: 12px;
   padding: 24px;
-  width: 100%;
+  width: 450px;
   margin: 0 8px;
 // content
   background: white;
@@ -93,4 +94,34 @@
   
 // position
   
+}
+
+@media (max-width: 1000px) {
+  .example_container {
+    flex-flow: column;
+    margin: 0;
+  }
+  .example_header {
+    flex-flow: column;
+    align-items: center;
+    h2 {
+      margin-bottom: 12px;
+    }
+  }
+  .example_info {
+    margin-top: 24px;
+    width: 500px;
+  }
+  .example_placeholder {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .example_container {
+    width: 90vw;
+  }
+  .example_info {
+    width: 95%;
+  }
 }

@@ -33,14 +33,14 @@ return <div className='example'>
     <div className='example_info'>
       <h3>Contributions</h3>
       {props.data['contributions'].map(element => {
-        return <ListItem src={element.src} alt={element.alt} title={element.title}/>
+        return <ListItem src={element.src} alt={element.alt} title={element.title} details={element.details}/>
       })}
     </div>
 
     <div className='example_info'>
       <h3>Languages & Technologies</h3>
       {props.data['langTech'].map(element => {
-        return <ListItem src={element.src} alt={element.alt} title={element.title}/>
+        return <ListItem src={element.src} alt={element.alt} title={element.title} details={element.details}/>
       })}
     </div>
   </div>
